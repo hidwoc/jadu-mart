@@ -91,6 +91,7 @@ _**Jadu Mart** will not include any exchange of money._
 #### Component Tree
 
 [Component Tree](https://whimsical.com/jadumart-3WjUZDdzN4ko71m82aFroZ)
+
 ![Screen Shot 2021-08-11 at 11 58 14 AM](https://user-images.githubusercontent.com/83293460/129063954-97a73550-4f8d-402a-896f-0ffe9ea1c1c5.png)
 
 #### Component File Structure
@@ -141,7 +142,7 @@ src
 
 #### ERD Model
 
-![ERD](https://user-images.githubusercontent.com/83293460/129064067-2424da74-2cd2-4b36-a139-2a639499d278.png)
+![ERD](https://user-images.githubusercontent.com/83293460/129064489-40a1fb34-3a6a-47e4-bfb8-e4721411fb15.png)
 
 <br>
 
