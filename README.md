@@ -7,6 +7,7 @@
     - [Wireframes](#wireframes)
     - [Component Tree](#component-tree)
     - [Component Architecture](#component-architecture)
+    - [Project Schedule](#project-schedule)
     - [Time Estimates](#time-estimates)
   - [Server (Back End)](#server-back-end)
     - [ERD Model](#erd-model)
@@ -76,31 +77,44 @@ Backend tables modeled after [Rails Shopping Cart](https://github.com/howardmann
 
 [Link to Wireframe](https://www.figma.com/file/ZdClM51iFSjJztfUwXNzmC/JaduMart?node-id=0%3A1)
 
-![Home](https://user-images.githubusercontent.com/83293460/129063452-b254f6b9-63c0-4914-98dc-dec7870e72b3.png)
-![Shop](https://user-images.githubusercontent.com/83293460/129063535-9f9a7ea3-4ad3-4fc3-8818-d9e7a0a1788c.png)
-![Basket](https://user-images.githubusercontent.com/83293460/129063564-3b4ac111-f359-465f-b8ff-f86b640e9ff8.png)
-![Login](https://user-images.githubusercontent.com/83293460/129063496-3d816dec-d196-4934-8aad-0c4e3664df23.png)
+![Home](https://user-images.githubusercontent.com/83293460/129109054-8a13c61d-93ab-46e2-a5e8-b4d00f27cd87.png)
+![Shop](https://user-images.githubusercontent.com/83293460/129109096-8277a473-3b11-4aef-b67c-b43bf547ae45.png)
+![Basket](https://user-images.githubusercontent.com/83293460/129109104-e86866be-630a-4eec-95ce-0d8318206bd3.png)
+![Login](https://user-images.githubusercontent.com/83293460/129109927-b3b5bf43-7fba-4621-b5bf-f53d9210baa5.png)
 
-#### Admin View (Shop)
+##### Admin View (Shop)
 
-![Shop (admin view)](https://user-images.githubusercontent.com/83293460/129063533-d58f3556-83e2-4716-9a2e-5bcaf6ec5a9a.png)
+![Shop (admin view)](https://user-images.githubusercontent.com/83293460/129109135-347014dc-8467-4b8e-82db-5eee555f569e.png)
 
-#### Admin Only
+##### Admin Only
 
-![AddDish (admin)](https://user-images.githubusercontent.com/83293460/129063562-f5fe9d57-4461-4c9f-ae46-f7ef7afe4b88.png)
-![EditDish (admin)](https://user-images.githubusercontent.com/83293460/129063565-6936316e-0679-431e-8ed7-71a9db9b79d0.png)
+![AddDish (admin)](https://user-images.githubusercontent.com/83293460/129109159-8f1afaca-d4eb-4b81-91a6-3aa4262b19c7.png)
+![EditDish (admin)](https://user-images.githubusercontent.com/83293460/129109166-e346c4f9-1d16-4262-8f66-5f9a88120266.png)
 
 - Mobile View
 
-![N/A](url)
+![Mobile Home](https://user-images.githubusercontent.com/83293460/129109211-2b70e001-96d4-42c4-9e9d-7d8f1844b27e.png)
+![Mobile Hamburger Open](https://user-images.githubusercontent.com/83293460/129109565-14cc0a46-5b0c-4cad-a7c5-0d306da5fbae.png)
+![Mobile Shop](https://user-images.githubusercontent.com/83293460/129109222-4247a00e-34ba-4476-96bd-e7e286906b30.png)
+![Mobile Basket](https://user-images.githubusercontent.com/83293460/129109232-072f19b6-fd1c-413f-9d0c-67b68af6df41.png)
+![Mobile Login](https://user-images.githubusercontent.com/83293460/129109243-a2d2eeec-c60e-4498-a99d-e64bf4845b17.png)
+
+##### Admin View (Shop)
+
+![Mobile Shop (admin view)](https://user-images.githubusercontent.com/83293460/129109259-52dde45b-743e-45ff-a7e0-0f792e526a14.png)
+
+##### Admin Only
+
+![Mobile AddDish (admin only)](https://user-images.githubusercontent.com/83293460/129109278-058c4793-1bb1-4abf-9a9e-22cce4dfa48e.png)
+![Mobile EditDish (admin only)](https://user-images.githubusercontent.com/83293460/129109286-92f26282-cec6-4ac5-88ef-d2b34f927a4a.png)
 
 #### Component Tree
 
-[Component Tree](https://whimsical.com/jadumart-3WjUZDdzN4ko71m82aFroZ)
+[Link to Component Tree](https://whimsical.com/jadumart-3WjUZDdzN4ko71m82aFroZ)
 
-![Screen Shot 2021-08-11 at 11 58 14 AM](https://user-images.githubusercontent.com/83293460/129063954-97a73550-4f8d-402a-896f-0ffe9ea1c1c5.png)
+![ComponentHierarchy](https://user-images.githubusercontent.com/83293460/129105003-f7b586c0-3af2-4b69-90d1-34303802f1c8.png)
 
-#### Component File Structure
+#### Component Architecture
 
 ```structure
 
@@ -189,7 +203,8 @@ src
 
 #### ERD Model
 
-![ERD](https://user-images.githubusercontent.com/83293460/129064489-40a1fb34-3a6a-47e4-bfb8-e4721411fb15.png)
+![ERD](https://user-images.githubusercontent.com/83293460/129105063-16625afd-c290-49ed-bbb6-325ff401d33e.png)
+
 <br>
 
 ---
