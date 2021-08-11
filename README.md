@@ -18,8 +18,8 @@
 
 ## Overview
 
-_**Jadu Mart** is an e-commerce website for my business Jadu Banchan. Admin users will be able to log into their account, create, edit and delete dishes. Customers will be able to browse all dishes, add dishes to their cart and place an order._
-
+_**Jadu Mart** is an e-commerce website for my business Jadu Banchan. Admin users will be able to log into their account, create, edit and delete dishes. Customers will be able to browse all dishes, add dishes to their basket and place an order._
+ 
 _**Jadu Mart** will not include any exchange of money._
 
 <br>
@@ -28,11 +28,11 @@ _**Jadu Mart** will not include any exchange of money._
 
 - Back End
 
-  - Build a Ruby on Rails server with 4 tables (Dishes, Line_Items, Carts, Users)
-  - Dishes will be READ and its stock will be UPDATED via submitting a Cart for order
-  - Line_Items will be CREATED and DESTROYED by adding/removing them from Carts
-  - Line_Items are instances of a Dish that get added to Carts to account for and decrement a Dish's stock
-  - For MVP, User will consist of an admin who will be able to CREATE, UPDATE, and DESTROY Dishes
+  - Build a Ruby on Rails server with 4 tables (Dishes, Line_Items, Baskets, Users)
+  - Dishes will be READ and its stock will be UPDATED via submitting a Basket for order
+  - Line_Items will be CREATED and DESTROYED by adding/removing them from Baskets
+  - Line_Items are instances of a Dish that get added to Baskets to account for and decrement a Dish's stock
+  - For MVP, User will consist of an admin who will be able to CREATE and UPDATE Dishes
 
 - Front End
 
@@ -83,7 +83,6 @@ _**Jadu Mart** will not include any exchange of money._
 ![EditDish (admin)](https://user-images.githubusercontent.com/83293460/129063565-6936316e-0679-431e-8ed7-71a9db9b79d0.png)
 
 
-
 - Mobile View
 
 ![N/A](url)
@@ -103,25 +102,24 @@ src
       |__ fonts
       |__ graphics
       |__ images
-      |__ mockups
 |__ components/
       |__ Main/
-      |__Footer/
-      |__DishDetails/
-|__Layout/
-|__screens/
-      |__Welcome/
-      |__Shop/
-      |__Cart/
-      |__Login/
-      |__AddDish/
-      |__EditDish/
+      |__ Footer/
+      |__ DishDetails/
+      |__ EditDish/
+|__ Layout/
+|__ screens/
+      |__ Welcome/
+      |__ Shop/
+      |__ Basket/
+      |__ Login/
+      |__ AddDish/
 |__ services/
       |__ apiConfig
       |__ users
       |__ dishes
       |__ line_items
-      |__ carts
+      |__ baskets
 |__App.jsx
 |__App.css
 
@@ -143,7 +141,6 @@ src
 #### ERD Model
 
 ![ERD](https://user-images.githubusercontent.com/83293460/129064489-40a1fb34-3a6a-47e4-bfb8-e4721411fb15.png)
-
 <br>
 
 ---
@@ -152,8 +149,9 @@ src
 
 - Back End
 
+  - Admin will be able to DELETE dishes
   - Customers will be able to create and log into their own accounts
-  - Add Orders table to save past orders via submitted carts
+  - Add Orders table to save past orders via submitted baskets
   - Expand Dishes to offer different sizes available for purchase (ex. 4oz, 8oz, 16oz)
   - Add Reviews table to collect ratings and reviews of each Dish
 
