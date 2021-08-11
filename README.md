@@ -53,6 +53,8 @@ _**Jadu Mart** will not include any exchange of money._
 
 <br>
 
+Backend tables modeled after [Rails Shopping Cart](https://github.com/howardmann/Tutorials/blob/master/Rails_Shopping_Cart.md)
+
 ### Libraries and Dependencies
 
 |    Library    | Description                                             |
@@ -111,7 +113,6 @@ src
       |__ Main/
       |__ Footer/
       |__ DishDetails/
-      |__ EditDish/
 |__ Layout/
 |__ screens/
       |__ Welcome/
@@ -119,6 +120,7 @@ src
       |__ Basket/
       |__ Login/
       |__ AddDish/
+      |__ EditDish/
 |__ services/
       |__ apiConfig
       |__ users
@@ -135,7 +137,7 @@ src
 
 | Day          |               Components               |   Status   |
 | ------------ | :------------------------------------: | :--------: |
-| Wed Aug 11   |        Project Pitches Approval        | Incomplete |
+| Wed Aug 11   |        Project Pitches Approval        |  Complete  |
 | Thurs Aug 12 |      Set up backend, test routes       | Incomplete |
 | Fri Aug 13   | Deploy to Heroku, Build React Skeleton | Incomplete |
 | Sat Aug 14   |         Render all components          | Incomplete |
@@ -146,40 +148,40 @@ src
 
 #### Time Estimates
 
-| Task | Priority | Estimated Time | Time Invested | Actual Time |
-| ---- | :------: | :------------: | :-----------: | :---------: |
-| Proposal | H | 5 hrs | 5 hrs | |
-| Set up Models | H | 1 hr | TBD | TBD |
-| Seed Data | H | .5 hrs | TBD | TBD |
-| Set up Routes | H | .5 hrs | TBD | TBD |
-| Set up Controllers | H | 3 hrs | TBD | TBD |
-| Test Routes | H | 2 hrs | TBD | TBD |
-| Deploy to Heroku | H | .5 hrs | TBD | TBD |
-| Create React Skeleton | H | .5 hrs | TBD | TBD |
-| Layout | H | 1 hr | TBD | TBD |
-| Main | H | 1 hr | TBD | TBD |
-| Footer | H | 1 hr | TBD | TBD |
-| Welcome | H | 1 hr | TBD | TBD |
-| Shop | H | 1 hr | TBD | TBD |
-| DishDetails | H | 1 hrs | TBD | TBD |
-| Basket | H | 3 hrs | TBD | TBD |
-| Login | H | 2 hrs | TBD | TBD |
-| AddDish | H | 1 hrs | TBD | TBD |
-| EditDish | H | 1 hrs | TBD | TBD |
-| Authentication | H | 2 hr | TBD | TBD |
-| Global CSS| H | 2 hrs | TBD | TBD |
-| Layout CSS| H | 1 hr | TBD | TBD |
-| Main CSS| H | 1 hr | TBD | TBD |
-| Footer CSS| H | 1 hrs | TBD | TBD |
-| Welcome CSS| H | 1 hr | TBD | TBD |
-| Shop CSS| H | 1 hrs | TBD | TBD |
-| DishDetails CSS| H | 2 hrs | TBD | TBD |
-| Basket CSS| H | 3 hrs | TBD | TBD |
-| Login CSS| H | 1 hrs | TBD | TBD |
-| AddDish CSS| H | 2 hrs | TBD | TBD |
-| EditDish CSS| H | 1 hrs | TBD | TBD |
-| Deploy to Netlify | H | .5 hrs | TBD | TBD |
-| TOTAL | | 45.5 hrs | TBD | TBD |
+| Task                  | Priority | Estimated Time | Time Invested | Actual Time |
+| --------------------- | :------: | :------------: | :-----------: | :---------: |
+| Proposal              |    H     |     5 hrs      |     8 hrs     |             |
+| Set up Models         |    H     |      1 hr      |      TBD      |     TBD     |
+| Seed Data             |    H     |     .5 hrs     |      TBD      |     TBD     |
+| Set up Routes         |    H     |     .5 hrs     |      TBD      |     TBD     |
+| Set up Controllers    |    H     |     3 hrs      |      TBD      |     TBD     |
+| Test Routes           |    H     |     2 hrs      |      TBD      |     TBD     |
+| Deploy to Heroku      |    H     |     .5 hrs     |      TBD      |     TBD     |
+| Create React Skeleton |    H     |     .5 hrs     |      TBD      |     TBD     |
+| Layout                |    H     |      1 hr      |      TBD      |     TBD     |
+| Main                  |    H     |      1 hr      |      TBD      |     TBD     |
+| Footer                |    H     |      1 hr      |      TBD      |     TBD     |
+| Welcome               |    H     |      1 hr      |      TBD      |     TBD     |
+| Shop                  |    H     |      1 hr      |      TBD      |     TBD     |
+| DishDetails           |    H     |     1 hrs      |      TBD      |     TBD     |
+| Basket                |    H     |     3 hrs      |      TBD      |     TBD     |
+| Login                 |    H     |     2 hrs      |      TBD      |     TBD     |
+| AddDish               |    H     |     1 hrs      |      TBD      |     TBD     |
+| EditDish              |    H     |     1 hrs      |      TBD      |     TBD     |
+| Authentication        |    H     |      2 hr      |      TBD      |     TBD     |
+| Global CSS            |    H     |     2 hrs      |      TBD      |     TBD     |
+| Layout CSS            |    H     |      1 hr      |      TBD      |     TBD     |
+| Main CSS              |    H     |      1 hr      |      TBD      |     TBD     |
+| Footer CSS            |    H     |     1 hrs      |      TBD      |     TBD     |
+| Welcome CSS           |    H     |      1 hr      |      TBD      |     TBD     |
+| Shop CSS              |    H     |     1 hrs      |      TBD      |     TBD     |
+| DishDetails CSS       |    H     |     2 hrs      |      TBD      |     TBD     |
+| Basket CSS            |    H     |     3 hrs      |      TBD      |     TBD     |
+| Login CSS             |    H     |     1 hrs      |      TBD      |     TBD     |
+| AddDish CSS           |    H     |     2 hrs      |      TBD      |     TBD     |
+| EditDish CSS          |    H     |     1 hrs      |      TBD      |     TBD     |
+| Deploy to Netlify     |    H     |     .5 hrs     |      TBD      |     TBD     |
+| TOTAL                 |          |    45.5 hrs    |      TBD      |     TBD     |
 
 <br>
 
