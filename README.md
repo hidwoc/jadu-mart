@@ -1,9 +1,5 @@
 # Jadu Mart
 
-> The Project Planning section **should be completed** for your project pitch with instructors.
->
-> To ensure correct Markdown, copy and paste the raw template code into your project repo README file. Remove ALL template instructions and replace with your project details.
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Libraries and Dependencies](#libraries-and-dependencies)
@@ -22,15 +18,13 @@
 
 ## Overview
 
-_**Jadu Mart** is an e-commerce website for my business Jadu Banchan. Admin users will be able to log into their account, create, edit and delete Dishes. Customers will be able to browse all dishes, add dishes to their cart and place an order._
+_**Jadu Mart** is an e-commerce website for my business Jadu Banchan. Admin users will be able to log into their account, create, edit and delete dishes. Customers will be able to browse all dishes, add dishes to their cart and place an order._
 
 _**Jadu Mart** will not include any exchange of money._
 
 <br>
 
 ## MVP
-
-> The Minimum Viable Product should be a well-planned, easily-communicated product, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
 
 - Back End
 
@@ -58,21 +52,18 @@ _**Jadu Mart** will not include any exchange of money._
   - Fully functioning deployed front-end via Netlify
   - Fully functioning deployed back-end via Heroku
 
-
 <br>
 
 ### Libraries and Dependencies
 
-> Use this section to list all supporting libraries and dependencies, and their role in the project. Below is an example - this needs to be replaced!
-
-|     Library      | Description                                |
-| :--------------: | :----------------------------------------- |
-|      React       | _Lorem ipsum dolor sit amet, consectetur._ |
-|   React Router   | _Lorem ipsum dolor sit amet, consectetur._ |
-| axios | _Lorem ipsum dolor sit amet, consectetur._ |
-|     Rails      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  bcrypt  | _Lorem ipsum dolor sit amet, consectetur._ |
-|  JWT  | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Library    | Description                                             |
+| :-----------: | :------------------------------------------------------ |
+|     React     | _Renders front end_                                     |
+| React Router  | _Enables client side routing_                           |
+|     Axios     | _Enables client side to make API calls to the back end_ |
+|     Rails     | _Enables creation of custom back end server_            |
+|    bcrypt     | _Provides cybersecurity by hashing passwords_           |
+| JWT Web Token | _Provides ecrypted user authentication_                 |
 
 <br>
 
@@ -84,12 +75,11 @@ _**Jadu Mart** will not include any exchange of money._
 
 - Desktop View
 
-![Lnk to Wireframe](url)
+![Link to Wireframe](url)
 
 - Mobile View
 
 ![Link to Wireframe](url)
-
 
 #### Component Tree
 
@@ -99,9 +89,9 @@ _**Jadu Mart** will not include any exchange of money._
 
 #### Component File Structure
 
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like. 
+> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
 
-``` structure
+```structure
 
 src
 |__ assets/
@@ -110,8 +100,26 @@ src
       |__ images
       |__ mockups
 |__ components/
-      |__ Header.jsx
+      |__ Main/
+      |__Footer/
+      |__DishDetails/
+|__Layout/
+|__screens/
+      |__Welcome/
+      |__Shop/
+      |__Cart/
+      |__Login/
+      |__AddDish/
+      |__EditDish/
 |__ services/
+      |__ apiConfig
+      |__ users
+      |__ dishes
+      |__ line_items
+      |__ carts
+|__App.jsx
+|__App.css
+
 
 ```
 
@@ -135,10 +143,10 @@ src
 
 > Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
 
-[ERD Sample](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
+[ERD](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
-***
+---
 
 ## Post-MVP
 
