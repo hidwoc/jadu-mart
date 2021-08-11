@@ -71,25 +71,29 @@ _**Jadu Mart** will not include any exchange of money._
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop, tablet and mobile views. No hand-drawn wireframes. Use a tool like wireframe.cc, Whimsical or AdobeXD
-
 - Desktop View
 
-![Link to Wireframe](url)
+![Link to Wireframe](https://www.figma.com/file/ZdClM51iFSjJztfUwXNzmC/JaduMart?node-id=0%3A1)
+![Home](https://user-images.githubusercontent.com/83293460/129063452-b254f6b9-63c0-4914-98dc-dec7870e72b3.png)
+![Shop](https://user-images.githubusercontent.com/83293460/129063535-9f9a7ea3-4ad3-4fc3-8818-d9e7a0a1788c.png)
+![Basket](https://user-images.githubusercontent.com/83293460/129063564-3b4ac111-f359-465f-b8ff-f86b640e9ff8.png)
+![Login](https://user-images.githubusercontent.com/83293460/129063496-3d816dec-d196-4934-8aad-0c4e3664df23.png)
+![Shop (admin view)](https://user-images.githubusercontent.com/83293460/129063533-d58f3556-83e2-4716-9a2e-5bcaf6ec5a9a.png)
+![AddDish (admin)](https://user-images.githubusercontent.com/83293460/129063562-f5fe9d57-4461-4c9f-ae46-f7ef7afe4b88.png)
+![EditDish (admin)](https://user-images.githubusercontent.com/83293460/129063565-6936316e-0679-431e-8ed7-71a9db9b79d0.png)
+
+
 
 - Mobile View
 
-![Link to Wireframe](url)
+![N/A](url)
 
 #### Component Tree
 
-> Use this section to display the structure of how your React components are being rendered. This should show the parent to child relation between you components. In other words, show which components are rendering the other components. Include a link to your component tree
-
-[Component Tree Sample](https://whimsical.com/tasteville-heirarchy-EXWBPohXhZBJU7tjgHn2rt)
+[Component Tree](https://whimsical.com/jadumart-3WjUZDdzN4ko71m82aFroZ)
+![Screen Shot 2021-08-11 at 11 58 14 AM](https://user-images.githubusercontent.com/83293460/129063954-97a73550-4f8d-402a-896f-0ffe9ea1c1c5.png)
 
 #### Component File Structure
-
-> Use this section to define your React components and the data architecture of your app. This should be a reflection of how you expect your directory/file tree to look like.
 
 ```structure
 
@@ -125,15 +129,11 @@ src
 
 #### Time Estimates
 
-> Use this section to estimate the time necessary to build out each of the components you've described above.
-
 | Task                | Priority | Estimated Time | Time Invested | Actual Time |
 | ------------------- | :------: | :------------: | :-----------: | :---------: |
 | Add Contact Form    |    L     |     3 hrs      |     2 hrs     |    3 hrs    |
 | Create CRUD Actions |    H     |     3 hrs      |     1 hrs     |     TBD     |
 | TOTAL               |          |     6 hrs      |     3 hrs     |     TBD     |
-
-> _Why is this necessary? Time frames are key to the development cycle. You have limited time to code your app, and your estimates can then be used to evaluate possibilities of your MVP and post-MVP based on time needed. It's best you assume an additional hour for each component, as well as a few hours added to the total time, to play it safe._
 
 <br>
 
@@ -141,9 +141,8 @@ src
 
 #### ERD Model
 
-> Use this section to display an image of a computer generated ERD model. You can use draw.io, Lucidchart or another ERD tool.
+![ERD](https://user-images.githubusercontent.com/83293460/129064067-2424da74-2cd2-4b36-a139-2a639499d278.png)
 
-[ERD](https://drive.google.com/file/d/1kLyQTZqfcA4jjKWQexfEkG2UspyclK8Q/view)
 <br>
 
 ---
