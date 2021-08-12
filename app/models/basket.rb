@@ -1,6 +1,6 @@
 class Basket < ApplicationRecord
-  has_many :line_items, dependent :destroy
-  has_many :dishes, through :line_items
+  has_many :line_items, dependent: :destroy
+  has_many :dishes, through: :line_items
 
   def total
     sum = 0

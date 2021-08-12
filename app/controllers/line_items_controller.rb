@@ -2,12 +2,12 @@ class LineItemsController < ApplicationController
   before_action :set_line_item, only: [:remove_from_basket, :add_quantity, :reduce_quantity]
 
   # GET /line_items
-  # TODO: might not need this, bc this will happen in Basket?
-  def index
-    @line_items = LineItem.all
+  # # TODO: might not need this, bc this will happen in Basket?
+  # def index
+  #   @line_items = LineItem.all
 
-    render json: @line_items
-  end
+  #   render json: @line_items
+  # end
 
   # GET /line_items/1
   # def show

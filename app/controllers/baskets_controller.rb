@@ -7,7 +7,7 @@ class BasketsController < ApplicationController
   end
 
   def place_order
-    @basket.line_items.map |line_item| do
+    @basket.line_items.map do |line_item|
       @dish = Dish.find(line_item.dish_id)
       @dish.in_stock -= line_item.quantity
       @dish.save
