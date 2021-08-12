@@ -168,8 +168,8 @@ src
 | Research              |    H     |     2 hrs      |    .15 hrs     |     TBD     |
 | Set up Models         |    H     |      1 hr      |    .25 hrs    |     TBD     |
 | Seed Data             |    H     |     .5 hrs     |    .5 hrs     |     TBD     |
-| Set up Routes         |    H     |     .5 hrs     |      TBD      |     TBD     |
-| Set up Controllers    |    H     |     3 hrs      |      TBD      |     TBD     |
+| Set up Routes         |    H     |     .5 hrs     |      .25      |     TBD     |
+| Set up Controllers    |    H     |     3 hrs      |      1 hr     |     TBD     |
 | Test Routes           |    H     |     2 hrs      |      TBD      |     TBD     |
 | Deploy to Heroku      |    H     |     .5 hrs     |      TBD      |     TBD     |
 | Create React Skeleton |    H     |     .5 hrs     |      TBD      |     TBD     |
