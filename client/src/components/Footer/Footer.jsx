@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -6,9 +6,9 @@ const Footer = () => {
       <div>
         <div>Jadu Mart</div>
         <nav>
-          <Link to="/">Home</Link>
-          <Link to="/shop">Shop</Link>
-          <Link to="/login">Login</Link>
+          <NavLink to="/">Home</NavLink>
+          <NavLink to="/shop">Shop</NavLink>
+          <NavLink to="/login">Login</NavLink>
         </nav>
       </div>
       <div>

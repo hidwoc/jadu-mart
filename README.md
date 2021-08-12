@@ -172,7 +172,7 @@ src
 | Set up Controllers    |    H     |     3 hrs      |     1 hr      |     TBD     |
 | Test Routes           |    H     |     2 hrs      |      1.5 hrs      |     TBD     |
 | Deploy to Heroku      |    H     |     .5 hrs     |      TBD      |     TBD     |
-| Create React Skeleton |    H     |     .5 hrs     |      .25 hrs      |     TBD     |
+| Create React Skeleton |    H     |     .5 hrs     |      .6 hrs      |     TBD     |
 | Layout                |    H     |      1 hr      |      TBD      |     TBD     |
 | Main                  |    H     |      1 hr      |      TBD      |     TBD     |
 | Footer                |    H     |      1 hr      |      .2 hrs     |     TBD     |

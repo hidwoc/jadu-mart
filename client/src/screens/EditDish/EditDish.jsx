@@ -1,9 +1,12 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom"
 
 const EditDish = () => {
   return (
     <div>
-      EDIT DISH
+      <Link to="/shop">
+        <div className="go-back">Return Without Saving</div>
+      </Link>
     </div>
   );
 };

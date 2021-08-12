@@ -1,9 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Welcome = () => {
   return (
     <div>
-      WELCOME
+      <Link to="/shop">SHOP THE GOODS</Link>
     </div>
   );
 };
