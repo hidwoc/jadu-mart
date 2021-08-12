@@ -203,7 +203,7 @@ src
 
 #### ERD Model
 
-![ERD](https://user-images.githubusercontent.com/83293460/129105063-16625afd-c290-49ed-bbb6-325ff401d33e.png)
+![ERD](https://user-images.githubusercontent.com/83293460/129206958-96f4b686-2709-49be-989e-262b6a9f67f7.png)
 
 <br>
 
