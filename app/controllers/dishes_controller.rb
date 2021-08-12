@@ -18,7 +18,7 @@ class DishesController < ApplicationController
     @dish = Dish.new(dish_params)
 
     if @dish.save
-      render json: @dish, status: :created, location: @dish
+      render json: @dish, status: :created
       redirect_to dishes_path
     else
       render json: @dish.errors, status: :unprocessable_entity
@@ -28,7 +28,7 @@ class DishesController < ApplicationController
   # PATCH/PUT /dishes/1
   def update
     if @dish.update(dish_params)
-      render json: @dish
+      render json: @dish, status: :ok
       redirect_to dishes_path
     else
       render json: @dish.errors, status: :unprocessable_entity
