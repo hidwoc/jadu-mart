@@ -9,7 +9,7 @@
 Dish.destroy_all
 
 # Users
-# hidwoc = User.create!(username: 'hidwoc', email: 'heidischoi@gmail.com', password_digest: 'hmmmmmm', is_admin: true)
+# admin = User.create!(username: 'hidwoc', email: 'heidischoi@gmail.com', password: 'banchan', is_admin: true)
 
 # Dishes
 kimchi = Dish.create!(name: 'kimchi', description: '16oz - Napa cabbages and radish fermented for spicy, umami perfection. Reduces cholesterol and inflammation. Packed with vitamins, mineral and antioxidants. Your gut will thank you!', img_url: 'assets/dishes_images/Kimchi.jpg', price: 15, in_stock: 20)

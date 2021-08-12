@@ -3,8 +3,9 @@ Rails
   .routes
   .draw do
     get 'baskets/:id' => 'baskets#show', :as => 'basket'
+    post 'baskets/:id' => 'baskets#place_order'
     delete 'baskets/:id' => 'baskets#destroy'
-    
+
     resources :users do
       resources :dishes do
         post 'line_items/:id/add' => 'line_items#add_quantity',
@@ -13,7 +14,7 @@ Rails
              :as => 'line_item_reduce'
         post 'line_items' => 'line_items#create'
         get 'line_items/:id' => 'line_items#show', :as => 'line_item'
-        delete 'line_items/:id' => 'line_items#destroy'
+        delete 'line_items/:id' => 'line_items#remove_from_basket'
       end
     end
 

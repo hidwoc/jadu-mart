@@ -1,4 +1,5 @@
 class DishesController < ApplicationController
+  before_action :authorize_request, only: [:create, :update, :destroy]
   before_action :set_dish, only: [:show, :update, :destroy]
 
   # GET /dishes

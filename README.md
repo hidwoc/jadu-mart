@@ -165,11 +165,11 @@ src
 | Task                  | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal              |    H     |     5 hrs      |     8 hrs     |    8 hrs    |
-| Research              |    H     |     2 hrs      |    .15 hrs     |     TBD     |
+| Research              |    H     |     2 hrs      |    .15 hrs    |     TBD     |
 | Set up Models         |    H     |      1 hr      |    .25 hrs    |     TBD     |
 | Seed Data             |    H     |     .5 hrs     |    .5 hrs     |     TBD     |
 | Set up Routes         |    H     |     .5 hrs     |      .25      |     TBD     |
-| Set up Controllers    |    H     |     3 hrs      |      1 hr     |     TBD     |
+| Set up Controllers    |    H     |     3 hrs      |     1 hr      |     TBD     |
 | Test Routes           |    H     |     2 hrs      |      TBD      |     TBD     |
 | Deploy to Heroku      |    H     |     .5 hrs     |      TBD      |     TBD     |
 | Create React Skeleton |    H     |     .5 hrs     |      TBD      |     TBD     |
@@ -183,7 +183,7 @@ src
 | Login                 |    H     |     2 hrs      |      TBD      |     TBD     |
 | AddDish               |    H     |     1 hrs      |      TBD      |     TBD     |
 | EditDish              |    H     |     1 hrs      |      TBD      |     TBD     |
-| Authentication        |    H     |      2 hr      |      TBD      |     TBD     |
+| Authentication        |    H     |      2 hr      |    .2 hrs     |     TBD     |
 | Global CSS            |    H     |     2 hrs      |      TBD      |     TBD     |
 | Layout CSS            |    H     |      1 hr      |      TBD      |     TBD     |
 | Main CSS              |    H     |      1 hr      |      TBD      |     TBD     |
