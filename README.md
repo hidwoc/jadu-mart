@@ -187,7 +187,7 @@ src
 | Global CSS            |    H     |     2 hrs      |      TBD      |     TBD     |
 | Layout CSS            |    H     |      1 hr      |      TBD      |     TBD     |
 | Main CSS              |    H     |      1 hr      |      TBD      |     TBD     |
-| Footer CSS            |    H     |     1 hrs      |      TBD      |     TBD     |
+| Footer CSS            |    H     |     1 hrs      |      .1hrs     |     TBD     |
 | Welcome CSS           |    H     |      1 hr      |      TBD      |     TBD     |
 | Shop CSS              |    H     |     1 hrs      |      TBD      |     TBD     |
 | DishDetails CSS       |    H     |     2 hrs      |      TBD      |     TBD     |
