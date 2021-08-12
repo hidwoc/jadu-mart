@@ -152,7 +152,7 @@ src
 | Day          |               Components               |   Status   |
 | ------------ | :------------------------------------: | :--------: |
 | Wed Aug 11   |        Project Pitches Approval        |  Complete  |
-| Thurs Aug 12 |      Set up backend, test routes       | Incomplete |
+| Thurs Aug 12 |      Set up backend, test routes       | Complete |
 | Fri Aug 13   | Deploy to Heroku, Build React Skeleton | Incomplete |
 | Sat Aug 14   |         Render all components          | Incomplete |
 | Sun Aug 15   |                  CSS                   | Incomplete |
@@ -172,7 +172,7 @@ src
 | Set up Controllers    |    H     |     3 hrs      |     1 hr      |     TBD     |
 | Test Routes           |    H     |     2 hrs      |      1.5 hrs      |     TBD     |
 | Deploy to Heroku      |    H     |     .5 hrs     |      TBD      |     TBD     |
-| Create React Skeleton |    H     |     .5 hrs     |      TBD      |     TBD     |
+| Create React Skeleton |    H     |     .5 hrs     |      .1 hrs      |     TBD     |
 | Layout                |    H     |      1 hr      |      TBD      |     TBD     |
 | Main                  |    H     |      1 hr      |      TBD      |     TBD     |
 | Footer                |    H     |      1 hr      |      TBD      |     TBD     |
