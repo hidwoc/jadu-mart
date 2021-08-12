@@ -6,6 +6,7 @@ class BasketsController < ApplicationController
     render json: @basket, include: :line_items
   end
 
+  # POST /baskets/:id
   def place_order
     @basket.line_items.map do |line_item|
       @dish = Dish.find(line_item.dish_id)

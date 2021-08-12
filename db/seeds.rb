@@ -6,8 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+Basket.destroy_all
 Dish.destroy_all
 
+puts "\nTotal basket count: #{Basket.all.count}"
 # Users
 # admin = User.create!(username: 'hidwoc', email: 'heidischoi@gmail.com', password: 'banchan') # is_admin: true
 
@@ -17,9 +19,10 @@ jalapenos = Dish.create!(name: 'pickled jalapeños', description: '8oz - Spicy a
 beans = Dish.create!(name: 'braised black beans', description: '4oz - Sweet and slightly nutty, black beans promote a healthy complexion. These stay in the fridge and pair great with rice or beer.', img_url: 'assets/dishes_images/Beans.jpg', price: 4, in_stock: 15)
 seaweed = Dish.create!(name: 'sautéed seaweed stems', description: '4oz - Seaweed is high in calcium, iodine, vitamins and minerals. These stems are sautéed with onion and garlic for cruncy and chewy goodness. Can be eaten warm or cold.', img_url: 'assets/dishes_images/Seaweed.jpg', price: 4, in_stock: 10)
 
-pp "#{Dish.count} dishes created!"
+puts "#{Dish.all.count} dishes created!"
 
 # LineItems will be created once a dish is added to a basket
 
+# Basket
 # Basket will be created each session and will persist throughout a session with state
 # Submitting an order will destroy the basket and create a new one
