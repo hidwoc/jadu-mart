@@ -25,7 +25,7 @@ class DishesController < ApplicationController
     end
   end
 
-  # PATCH/PUT /dishes/1
+  # PUT /dishes/:id
   def update
     if @dish.update(dish_params)
       render json: @dish, status: :ok
@@ -34,7 +34,7 @@ class DishesController < ApplicationController
     end
   end
 
-  # DELETE /dishes/1
+  # DELETE /dishes/:id
   def destroy
     @dish.destroy
   end

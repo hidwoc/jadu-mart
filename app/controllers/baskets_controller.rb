@@ -2,6 +2,7 @@ class BasketsController < ApplicationController
   before_action :set_basket
   after_action :destroy, only: :place_order
 
+  # GET /baskets/:id
   def show
     render json: @basket, include: :line_items
   end
@@ -17,6 +18,7 @@ class BasketsController < ApplicationController
     render json: Dish.all
   end
 
+  # DELETE /baskets/:id
   # TODO: will we have to invoke this to clear a basket after each session?
   # TODO: or make this a private method?
   def destroy
