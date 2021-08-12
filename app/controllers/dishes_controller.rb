@@ -19,6 +19,7 @@ class DishesController < ApplicationController
 
     if @dish.save
       render json: @dish, status: :created, location: @dish
+      redirect_to dishes_path
     else
       render json: @dish.errors, status: :unprocessable_entity
     end
@@ -28,6 +29,7 @@ class DishesController < ApplicationController
   def update
     if @dish.update(dish_params)
       render json: @dish
+      redirect_to dishes_path
     else
       render json: @dish.errors, status: :unprocessable_entity
     end
@@ -36,6 +38,7 @@ class DishesController < ApplicationController
   # DELETE /dishes/1
   def destroy
     @dish.destroy
+    redirect_to dishes_path
   end
 
   private

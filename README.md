@@ -165,7 +165,7 @@ src
 | Task                  | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal              |    H     |     5 hrs      |     8 hrs     |    8 hrs    |
-| Research              |    H     |     2 hrs      |    .1 hrs     |     TBD     |
+| Research              |    H     |     2 hrs      |    .15 hrs     |     TBD     |
 | Set up Models         |    H     |      1 hr      |    .25 hrs    |     TBD     |
 | Seed Data             |    H     |     .5 hrs     |    .5 hrs     |     TBD     |
 | Set up Routes         |    H     |     .5 hrs     |      TBD      |     TBD     |
