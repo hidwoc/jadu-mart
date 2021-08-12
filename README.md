@@ -183,7 +183,7 @@ src
 | Login                 |    H     |     2 hrs      |      TBD      |     TBD     |
 | AddDish               |    H     |     1 hrs      |      TBD      |     TBD     |
 | EditDish              |    H     |     1 hrs      |      TBD      |     TBD     |
-| Authentication        |    H     |      2 hr      |    .2 hrs     |     TBD     |
+| Authentication        |    H     |      2 hr      |    .35 hrs     |     TBD     |
 | Global CSS            |    H     |     2 hrs      |      TBD      |     TBD     |
 | Layout CSS            |    H     |      1 hr      |      TBD      |     TBD     |
 | Main CSS              |    H     |      1 hr      |      TBD      |     TBD     |
