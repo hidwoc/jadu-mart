@@ -1,20 +1,23 @@
+import { useState } from "react"
+import { Route } from "react-router-dom";
 import Layout from "./Layout/Layout"
-import "./App.css";
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Login from "./screens/Login/Login";
-import { Route } from "react-router-dom";
+import "./App.css";
 
 
 function App() {
+  const [user, setUser] = useState(null)
+
   return (
     <div className="App">
-      <Layout >
+      <Layout user={user} >
         <Route exact path="/login">
-          <Login />
+          <Login setUser={setUser} />
         </Route>
-        <Main />
-        <Footer />
+        <Main user={user} />
+        <Footer user={user}/>
       </Layout>
     </div>
   );

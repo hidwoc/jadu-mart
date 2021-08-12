@@ -1,6 +1,5 @@
-export const handleChange = (e, helpers) => {
+export const handleChange = (e, state, setState) => {
   const { name, value } = e.target
-  let [ state, setState ] = [...helpers]
   setState({
     ...state,
     [name]: value

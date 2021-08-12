@@ -180,10 +180,10 @@ src
 | Shop                  |    H     |      1 hr      |      TBD      |     TBD     |
 | DishDetails           |    H     |     1 hrs      |      TBD      |     TBD     |
 | Basket                |    H     |     3 hrs      |      TBD      |     TBD     |
-| Login                 |    H     |     2 hrs      |      TBD      |     TBD     |
+| Login                 |    H     |     2 hrs      |      .5hrs      |     TBD     |
 | AddDish               |    H     |     1 hrs      |      TBD      |     TBD     |
 | EditDish              |    H     |     1 hrs      |      TBD      |     TBD     |
-| Authentication        |    H     |      2 hr      |    .35 hrs     |     TBD     |
+| Authentication        |    H     |      2 hr      |    .5 hrs     |     TBD     |
 | Global CSS            |    H     |     2 hrs      |      TBD      |     TBD     |
 | Layout CSS            |    H     |      1 hr      |      TBD      |     TBD     |
 | Main CSS              |    H     |      1 hr      |      TBD      |     TBD     |
