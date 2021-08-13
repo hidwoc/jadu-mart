@@ -25,7 +25,7 @@ export const verify = async () => {
   }
 };
 
-export const logout = async() => {
+export const logout = () => {
   localStorage.removeItem("authToken");
   api.defaults.headers.common.authorization = null;
 }

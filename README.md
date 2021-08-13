@@ -176,7 +176,7 @@ src
 | Frontend API Config   |    H     |      1hr       |      ---      |    .2hrs    |
 | Layout                |    H     |      1hr       |      ---      |     TBD     |
 | Main                  |    H     |      1hr       |      ---      |     TBD     |
-| Footer                |    H     |      1hr       |      ---      |    .2hrs    |
+| Footer                |    H     |      1hr       |      .05hrs      |    .2hrs    |
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |     TBD     |
 | DishDetails           |    H     |      1hrs      |      ---      |     TBD     |
