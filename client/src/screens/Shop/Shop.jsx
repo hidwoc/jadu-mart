@@ -15,7 +15,8 @@ const Shop = ({ user }) => {
   })
 
   return (
-    <div>
+    <div className="shop">
+      <h3>Shop</h3>
       {user ? (
         <Link to="/add-dish">Add New</Link>
       ) : (
@@ -26,7 +27,6 @@ const Shop = ({ user }) => {
           <DishDetails key={dish.id} user={user} dish={dish}/>
         ))}
       </div>
-      SHOP
     </div>
   );
 };
