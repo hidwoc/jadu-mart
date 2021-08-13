@@ -184,7 +184,7 @@ src
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      ---      |     TBD     |
 | EditDish              |    H     |      1hrs      |      ---      |     TBD     |
-| Authentication        |    H     |      2hr       |      ---      |    .5hrs    |
+| Authentication        |    H     |      2hr       |      .1hrs      |    .5hrs    |
 | Global CSS            |    H     |      2hrs      |      ---      |     TBD     |
 | Layout CSS            |    H     |      1hr       |      ---      |     TBD     |
 | Main CSS              |    H     |      1hr       |      ---      |     TBD     |

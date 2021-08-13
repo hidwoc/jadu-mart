@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const DishDetails = () => {
+const DishDetails = ({user}) => {
   return (
     <div>
       DISH DETAILS
-      <Link to="/edit-dish">Edit</Link>
+      {user ? (<Link to="/edit-dish">Edit</Link>) : (<button>Add to Cart</button>)}
     </div>
   );
 };

@@ -6,14 +6,14 @@ import EditDish from "../../screens/EditDish/EditDish";
 import Shop from "../../screens/Shop/Shop";
 import Welcome from "../../screens/Welcome/Welcome";
 
-const Main = () => {
+const Main = ({user}) => {
   return (
     <div>
       <Route exact path="/">
         <Welcome />
       </Route>
       <Route path="/shop">
-        <Shop />
+        <Shop user={user}/>
       </Route>
       <Route path="/basket">
         <Basket />

@@ -2,13 +2,16 @@ import React from "react";
 import { Link } from "react-router-dom";
 import DishDetails from "../../components/DishDetails/DishDetails";
 
-const Shop = () => {
+const Shop = ({ user }) => {
   return (
     <div>
-      <Link to="/add-dish">Add New</Link>
-      <Link to="/basket">Basket</Link>
+      {user ? (
+        <Link to="/add-dish">Add New</Link>
+      ) : (
+        <Link to="/basket">Basket</Link>
+      )}
       <div className="dishes-div">
-        <DishDetails />
+        <DishDetails user={user}/>
       </div>
       SHOP
     </div>
