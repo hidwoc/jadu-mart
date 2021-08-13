@@ -1,14 +1,23 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Route } from "react-router-dom";
 import Layout from "./Layout/Layout"
 import Main from "./components/Main/Main";
 import Footer from "./components/Footer/Footer";
 import Login from "./screens/Login/Login";
+import { verify } from "./services/users"
 import "./App.css";
 
 
 function App() {
   const [user, setUser] = useState(null)
+
+  useEffect(() => {
+    const verifyUser = async() => {
+      const user = await verify()
+      user ? setUser(user) : setUser(null)
+    }
+    verifyUser()
+  },[])
 
   return (
     <div className="App">
@@ -17,7 +26,7 @@ function App() {
           <Login setUser={setUser} />
         </Route>
         <Main user={user} />
-        <Footer user={user}/>
+        <Footer user={user} setUser={setUser}/>
       </Layout>
     </div>
   );

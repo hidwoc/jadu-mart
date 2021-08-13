@@ -13,10 +13,19 @@ export const login = async (user) => {
 };
 
 export const verify = async () => {
-  const token = localStorage.getItem("authToken");
-  if (token) {
-    api.defaults.headers.common.authorization = `Bearer ${token}`;
-    const res = await api.get("/users/verify");
-    return res.data;
+  try {
+    const token = localStorage.getItem("authToken");
+    if (token) {
+      api.defaults.headers.common.authorization = `Bearer ${token}`;
+      const res = await api.get("/users/verify");
+      return res.data;
+    }
+  } catch {
+    return false
   }
 };
+
+export const logout = async() => {
+  localStorage.removeItem("authToken");
+  api.defaults.headers.common.authorization = null;
+}
