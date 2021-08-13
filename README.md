@@ -165,26 +165,26 @@ src
 | Task                  | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal              |    H     |      5hrs      |      ---      |    8hrs     |
-| Research              |    H     |      2hrs      |      2hrs      |   .15hrs    |
-| Set up Models         |    H     |      1hr       |      ---      |   .25hrs    |
+| Research              |    H     |      2hrs      |     2hrs      |   .15hrs    |
+| Set up Models         |    H     |      1hr       |      .25hrs      |   .5hrs    |
 | Seed Data             |    H     |     .5hrs      |      ---      |    .5hrs    |
-| Set up Routes         |    H     |     .5hrs      |      ---      |   .25hrs    |
-| Set up Controllers    |    H     |      3hrs      |      .5hrs      |     1hr     |
+| Set up Routes         |    H     |     .5hrs      |      ---      |   .5hrs    |
+| Set up Controllers    |    H     |      3hrs      |     .5hrs     |     1hr     |
 | Test Routes           |    H     |      2hrs      |      ---      |   1.5hrs    |
 | Deploy to Heroku      |    H     |     .5hrs      |      ---      |     TBD     |
 | Create React Skeleton |    H     |     .5hrs      |      ---      |    .6hrs    |
 | Frontend API Config   |    H     |      1hr       |      ---      |    .2hrs    |
 | Layout                |    H     |      1hr       |      ---      |     TBD     |
 | Main                  |    H     |      1hr       |      ---      |     TBD     |
-| Footer                |    H     |      1hr       |      .05hrs      |    .2hrs    |
+| Footer                |    H     |      1hr       |    .05hrs     |    .2hrs    |
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
-| Shop                  |    H     |      1hr       |      .05hrs      |     TBD     |
-| DishDetails           |    H     |      1hrs      |      .1hrs      |     TBD     |
+| Shop                  |    H     |      1hr       |    .05hrs     |     TBD     |
+| DishDetails           |    H     |      1hrs      |     .1hrs     |     TBD     |
 | Basket                |    H     |      3hrs      |      ---      |     TBD     |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      ---      |     TBD     |
 | EditDish              |    H     |      1hrs      |      ---      |     TBD     |
-| Authentication        |    H     |      2hr       |      .1hrs      |    .5hrs    |
+| Authentication        |    H     |      2hr       |     .1hrs     |    .5hrs    |
 | Global CSS            |    H     |      2hrs      |      ---      |     TBD     |
 | Layout CSS            |    H     |      1hr       |      ---      |     TBD     |
 | Main CSS              |    H     |      1hr       |      ---      |     TBD     |

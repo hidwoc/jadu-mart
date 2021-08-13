@@ -17,7 +17,7 @@ class BasketsController < ApplicationController
   def place_order
     @basket.line_items.map do |line_item|
       @dish = Dish.find(line_item.dish_id)
-      @dish.in_stock -= line_item.quantity
+      @dish.inventory -= line_item.quantity
       @dish.save
     end
 
@@ -37,6 +37,7 @@ class BasketsController < ApplicationController
     @basket = Basket.find(params[:id])
   end
 
+  # TODO: clear this if not using
   def basket_params
     params.require(:basket).permit(:id, :line_items)
   end

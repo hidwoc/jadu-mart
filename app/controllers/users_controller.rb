@@ -38,7 +38,7 @@ class UsersController < ApplicationController
   private
 
   def user_register_params
-    params.require(:user).permit(:username, :email, :password) # :is_admin?
+    params.require(:user).permit(:username, :email, :password, :is_admin)
   end
 
   def user_login_params
