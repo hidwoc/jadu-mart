@@ -10,6 +10,7 @@ import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null)
+  const [basket, setBasket] = useState()
 
   useEffect(() => {
     const verifyUser = async() => {
@@ -18,6 +19,20 @@ function App() {
     }
     verifyUser()
   },[])
+
+  // useEffect(() => {
+  //   const getNewBasket = async() => {
+  //     const basket = await createBasket()
+  //     setBasket(basket)
+  //   }
+  //   getNewBasket()
+  //   return () => {
+  //     const clearBasket = async() => {
+  //       await deleteBasket(basket.id)
+  //     }
+  //     clearBasket()
+  //   }
+  // },[])
 
   return (
     <div className="App">

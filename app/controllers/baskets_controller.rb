@@ -1,5 +1,5 @@
 class BasketsController < ApplicationController
-  before_action :set_basket
+  before_action :set_basket, only: [:show, :place_order, :destroy]
   after_action :destroy, only: :place_order
 
   # GET /baskets/:id
@@ -7,7 +7,13 @@ class BasketsController < ApplicationController
     render json: @basket, include: :line_items
   end
 
-  # POST /baskets/:id
+  # POST /baskets
+  def create
+    @basket = Basket.create!
+    render json: @basket, status: :created
+  end
+
+  # PUT /baskets/:id
   def place_order
     @basket.line_items.map do |line_item|
       @dish = Dish.find(line_item.dish_id)
@@ -19,16 +25,19 @@ class BasketsController < ApplicationController
   end
 
   # DELETE /baskets/:id
-  # TODO: will we have to invoke this to clear a basket after each session?
-  # TODO: or make this a private method?
+  # TODO: will we have to invoke this to clear a basket after each session? --> clean up function
   def destroy
     @basket.destroy
-    session[:basket_id] = nil
+    render "Basket destroyed!", status: :no_content
   end
 
   private
 
   def set_basket
-    @basket = @current_basket
+    @basket = Basket.find(params[:id])
+  end
+
+  def basket_params
+    params.require(:basket).permit(:id, :line_items)
   end
 end

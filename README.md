@@ -165,11 +165,11 @@ src
 | Task                  | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal              |    H     |      5hrs      |      ---      |    8hrs     |
-| Research              |    H     |      2hrs      |      1hr      |   .15hrs    |
+| Research              |    H     |      2hrs      |      2hrs      |   .15hrs    |
 | Set up Models         |    H     |      1hr       |      ---      |   .25hrs    |
 | Seed Data             |    H     |     .5hrs      |      ---      |    .5hrs    |
 | Set up Routes         |    H     |     .5hrs      |      ---      |   .25hrs    |
-| Set up Controllers    |    H     |      3hrs      |      ---      |     1hr     |
+| Set up Controllers    |    H     |      3hrs      |      .5hrs      |     1hr     |
 | Test Routes           |    H     |      2hrs      |      ---      |   1.5hrs    |
 | Deploy to Heroku      |    H     |     .5hrs      |      ---      |     TBD     |
 | Create React Skeleton |    H     |     .5hrs      |      ---      |    .6hrs    |
