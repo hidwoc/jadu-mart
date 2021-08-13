@@ -12,7 +12,7 @@ const Shop = ({ user }) => {
       setDishes(allDishes)
     }
     fetchAllDishes()
-  })
+  },[])
 
   return (
     <div className="shop">

@@ -165,7 +165,7 @@ src
 | Task                  | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal              |    H     |      5hrs      |      ---      |    8hrs     |
-| Research              |    H     |      2hrs      |      ---      |   .15hrs    |
+| Research              |    H     |      2hrs      |      1hr      |   .15hrs    |
 | Set up Models         |    H     |      1hr       |      ---      |   .25hrs    |
 | Seed Data             |    H     |     .5hrs      |      ---      |    .5hrs    |
 | Set up Routes         |    H     |     .5hrs      |      ---      |   .25hrs    |
@@ -179,7 +179,7 @@ src
 | Footer                |    H     |      1hr       |      .05hrs      |    .2hrs    |
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      .05hrs      |     TBD     |
-| DishDetails           |    H     |      1hrs      |      .05hrs      |     TBD     |
+| DishDetails           |    H     |      1hrs      |      .1hrs      |     TBD     |
 | Basket                |    H     |      3hrs      |      ---      |     TBD     |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      ---      |     TBD     |
