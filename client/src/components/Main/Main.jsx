@@ -6,17 +6,17 @@ import EditDish from "../../screens/EditDish/EditDish";
 import Shop from "../../screens/Shop/Shop";
 import Welcome from "../../screens/Welcome/Welcome";
 
-const Main = ({user}) => {
+const Main = ({user, basket}) => {
   return (
     <div>
       <Route exact path="/">
         <Welcome />
       </Route>
       <Route path="/shop">
-        <Shop user={user}/>
+        <Shop user={user} basket={basket}/>
       </Route>
       <Route path="/basket">
-        <Basket />
+        <Basket bakset={basket}/>
       </Route>
       <Route path="/add-dish">
         <AddDish />

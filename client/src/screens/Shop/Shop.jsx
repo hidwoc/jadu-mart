@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DishDetails from "../../components/DishDetails/DishDetails";
 import { getAllDishes } from "../../services/dishes";
 
-const Shop = ({ user }) => {
+const Shop = ({ user, basket }) => {
   const [dishes, setDishes] = useState([])
 
   useEffect(() => {
@@ -24,7 +24,7 @@ const Shop = ({ user }) => {
       )}
       <div className="dishes-div">
         {dishes?.map(dish => (
-          <DishDetails key={dish.id} user={user} dish={dish}/>
+          <DishDetails key={dish.id} user={user} dish={dish} basket={basket}/>
         ))}
       </div>
     </div>

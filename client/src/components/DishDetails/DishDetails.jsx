@@ -2,11 +2,11 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { addToCart } from '../../services/lineItems';
 
-const DishDetails = ({user, dish}) => {
+const DishDetails = ({user, basket, dish}) => {
 
   const handleAdd = async() => {
-    const basket = await addToCart(dish.id)
-    console.log(basket)
+    const res = await addToCart(basket, dish)
+    console.log(res)
   }
 
   return (

@@ -6,11 +6,11 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
+puts "\n#{Basket.count} baskets destroyed!"
+
 Basket.destroy_all
 Dish.destroy_all
 User.destroy_all
-
-puts "\nTotal basket count: #{Basket.all.count}"
 
 # Users
 admin = User.create!(username: 'hidwoc', email: 'hid@woc.com', password: 'banchan', is_admin: true)
