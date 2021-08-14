@@ -21,7 +21,7 @@ const Main = ({user, basket}) => {
       <Route path="/add-dish">
         <AddDish />
       </Route>
-      <Route path="/edit-dish">
+      <Route path="/edit-dish/:id">
         <EditDish />
       </Route>
     </div>

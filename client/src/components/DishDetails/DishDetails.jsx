@@ -13,7 +13,7 @@ const DishDetails = ({user, basket, dish}) => {
       <h4>{dish.name.toUpperCase()}</h4>
       <p>{dish.description}</p>
       <h5>${dish.price}</h5>
-      {user ? (<Link to="/edit-dish">Edit</Link>) : (<button onClick={handleAdd}>Add to Cart</button>)}
+      {user ? (<Link to={`/edit-dish/${dish.id}`}>Edit</Link>) : (<button onClick={handleAdd}>Add to Cart</button>)}
     </div>
   );
 };
