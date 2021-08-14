@@ -149,16 +149,16 @@ src
 
 #### Project Schedule
 
-| Day          |               Components               |   Status   |
-| ------------ | :------------------------------------: | :--------: |
-| Wed Aug 11   |        Project Pitches Approval        |  Complete  |
-| Thurs Aug 12 |      Set up backend, test routes       |  Complete  |
-| Fri Aug 13   | Deploy to Heroku, Build React Skeleton | Incomplete |
-| Sat Aug 14   |         Render all components          | Incomplete |
-| Sun Aug 15   |                  CSS                   | Incomplete |
-| Mon Aug 16   |      Successful CRUD on Frontend       | Incomplete |
-| Tue Aug 17   |              Advanced CSS              | Incomplete |
-| Wed Aug 18   |              Presentation              | Incomplete |
+| Day          |         Components          |   Status   |
+| ------------ | :-------------------------: | :--------: |
+| Wed Aug 11   |  Project Pitches Approval   |  Complete  |
+| Thurs Aug 12 | Set up backend, test routes |  Complete  |
+| Fri Aug 13   |    Build React Skeleton     |  Complete  |
+| Sat Aug 14   |    Render all components    | Incomplete |
+| Sun Aug 15   | Successful CRUD on Frontend | Incomplete |
+| Mon Aug 16   |    Deploy to Heroku, CSS    | Incomplete |
+| Tue Aug 17   |        Advanced CSS         | Incomplete |
+| Wed Aug 18   |        Presentation         | Incomplete |
 
 #### Time Estimates
 
@@ -180,7 +180,7 @@ src
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |   .05hrs    |
 | DishDetails           |    H     |      1hrs      |      ---      |    .1hrs    |
-| Basket                |    H     |      3hrs      |      .5      |    .5hrs    |
+| Basket                |    H     |      3hrs      |      .5       |    .5hrs    |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      ---      |     TBD     |
 | EditDish              |    H     |      1hrs      |      ---      |     TBD     |

@@ -1,11 +1,11 @@
 import React from "react";
+import Footer from "../components/Footer/Footer"
 
-const Layout = (props) => {
+const Layout = ({children, user, setUser}) => {
   return (
     <div className="layout-div">
-      Layout
-      <div className="layout-children">{props.children}</div>
-      Layout
+      <div className="layout-children">{children}</div>
+      <Footer user={user} setUser={setUser}/>
     </div>
   );
 };
