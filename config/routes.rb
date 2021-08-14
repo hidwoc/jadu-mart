@@ -5,9 +5,10 @@ Rails
     get '/baskets/:id' => 'baskets#show', :as => 'basket'
     post '/baskets' => 'baskets#create'
     put '/baskets/:id' => 'baskets#place_order'
+    put '/baskets/:id/add' => 'baskets#add_line_item_to_basket'
     delete '/baskets/:id' => 'baskets#destroy'
 
-    post '/line_items' => 'line_items#create'
+    # post '/line_items' => 'line_items#create'
     put '/line_items/:id/add' => 'line_items#add_quantity',
           :as => 'line_item_add'
     put '/line_items/:id/reduce' => 'line_items#reduce_quantity',

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { getBasket } from "../../services/baskets";
 
-const Basket = () => {
-  const [basket, setBasket] = useState(null)
+const Basket = ({basket}) => {
+  const [viewBasket, setViewBasket] = useState(null)
 
   useEffect(() => {
     const fetchBasket = async() => {
@@ -12,9 +12,16 @@ const Basket = () => {
     }
     fetchBasket()
   },[])
-  // console.log(sessionStorage)
   return (
     <div>
+      <div>
+        {basket.lineItems?.map(lineItem => (
+          <div>
+            {console.log(lineItem)}
+          </div>
+
+        ))}
+      </div>
       <Link to="/shop">
         <div className="go-back">Back to Shop</div>
       </Link>

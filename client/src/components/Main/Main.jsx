@@ -16,7 +16,7 @@ const Main = ({user, basket}) => {
         <Shop user={user} basket={basket}/>
       </Route>
       <Route path="/basket">
-        <Basket bakset={basket}/>
+        <Basket basket={basket}/>
       </Route>
       <Route path="/add-dish">
         <AddDish />

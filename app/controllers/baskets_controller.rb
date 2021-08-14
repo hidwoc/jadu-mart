@@ -1,5 +1,5 @@
 class BasketsController < ApplicationController
-  before_action :set_basket, only: [:show, :place_order, :destroy]
+  before_action :set_basket, only: [:show, :place_order, :destroy, :add_line_item_to_basket]
   after_action :destroy, only: :place_order
 
   # GET /baskets/:id
@@ -31,14 +31,31 @@ class BasketsController < ApplicationController
     render "Basket destroyed!", status: :no_content
   end
 
+  # PUT /baskets/:id/add
+  def add_line_item_to_basket
+    dish = Dish.find(line_item_params[:dish_id])
+
+    if !@basket.dishes.include? dish 
+      line_item = LineItem.new(line_item_params)
+      @basket.line_items << line_item
+    else
+      line_item = @basket.line_items.find_by(:dish_id => dish)
+      # TODO: will need to render UI for this!
+      # TODO: probably have to refactor this
+      line_item.quantity += 1 unless dish.inventory < line_item.quantity
+    end
+ 
+    line_item.save
+    render json: @basket, include: :line_items, status: :ok
+  end
+
   private
 
   def set_basket
     @basket = Basket.find(params[:id])
   end
 
-  # TODO: clear this if not using
-  def basket_params
-    params.require(:basket).permit(:id, :line_items)
+  def line_item_params
+    params.require(:line_item).permit(:dish_id)
   end
 end

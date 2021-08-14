@@ -18,6 +18,16 @@ export const createBasket = async() => {
   }
 }
 
+export const addToBasket = async(basketID, dishID) => {
+  try {
+    const res = await api.put(`/baskets/${basketID}/add`, {line_item: {dish_id: dishID}})
+    return res.data
+  } catch {
+    return null
+  }
+}
+
+
 // TODO: return null either way to setBasket(null)?
 export const deleteBasket = async(basketID) => {
   try {
