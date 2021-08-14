@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useHistory } from "react-router-dom";
+import { createDish } from "../../services/dishes";
 import { handleChange } from "../../utils/helpers";
 
 const AddDish = () => {
@@ -10,10 +11,14 @@ const AddDish = () => {
     inventory: 0,
     img_url: "",
   });
+  const history = useHistory()
 
-  const handleSubmit = async() => {
-
+  const handleSubmit = async(e) => {
+    e.preventDefault()
+    const res = await createDish(form)
+    if (res) history.push('/shop') 
   }
+  
   return (
     <div className="add-dish">
       <header>
@@ -22,15 +27,16 @@ const AddDish = () => {
           <div className="go-back">Return Without Saving</div>
         </Link>
       </header>
-      <form className="dish-form" id="add-dish">
+      <form className="dish-form" id="add-dish" onSubmit={handleSubmit}>
         <div className="form-left">
-          <img src={form.img_url} alt="image-preview" />
+          <img src={form.img_url} alt="preview" />
           <input
             id="img-url"
             type="text"
             placeholder="img.jpg"
             name="img_url"
             onChange={(e) => handleChange(e, form, setForm)}
+            required
           />
         </div>
         <div className="form-right">
@@ -41,6 +47,7 @@ const AddDish = () => {
             name="name"
             onChange={(e) => handleChange(e, form, setForm)}
             style={{ textTransform: "uppercase" }}
+            required
           />
           <input
             id="description"
@@ -57,6 +64,7 @@ const AddDish = () => {
               placeholder="Price"
               name="price"
               onChange={(e) => handleChange(e, form, setForm)}
+              required
             />
             Inventory:{" "}
             <input
@@ -65,6 +73,7 @@ const AddDish = () => {
               placeholder="0"
               name="inventory"
               onChange={(e) => handleChange(e, form, setForm)}
+              required
             />
           </div>
           <button>Save</button>

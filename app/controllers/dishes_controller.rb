@@ -1,6 +1,6 @@
 class DishesController < ApplicationController
-  before_action :authorize_request, only: [:create, :update, :destroy]
-  before_action :set_dish, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: %i[create update destroy]
+  before_action :set_dish, only: %i[show update destroy]
 
   # GET /dishes
   def index
@@ -9,7 +9,7 @@ class DishesController < ApplicationController
     render json: @dishes
   end
 
-  # GET /dishes/1
+  # GET /dishes/:id
   def show
     render json: @dish
   end
@@ -40,13 +40,14 @@ class DishesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_dish
-      @dish = Dish.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def dish_params
-      params.require(:dish).permit(:name, :description, :img_url, :price, :inventory)
-    end
+  def set_dish
+    @dish = Dish.find(params[:id])
+  end
+
+  def dish_params
+    params
+      .require(:dish)
+      .permit(:name, :description, :img_url, :price, :inventory)
+  end
 end

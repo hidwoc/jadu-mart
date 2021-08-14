@@ -35,3 +35,12 @@ export const editDish = async (id, formData) => {
     return false;
   }
 };
+
+export const deleteDish = async (id) => {
+  try {
+    const res = await api.destroy(`/dishes/${id}`);
+    return res.data;
+  } catch {
+    return false;
+  }
+};
