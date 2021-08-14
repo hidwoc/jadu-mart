@@ -8,6 +8,8 @@ const DishDetails = ({user, basket, dish}) => {
     console.log(res)
   }
 
+  // TODO 1 render image
+  // TODO 2 sort images so they don't autosort by updated_at
   return (
     <div className="dish-details">
       <h4>{dish.name.toUpperCase()}</h4>

@@ -165,11 +165,11 @@ src
 | Task                  | Priority | Estimated Time | Time Invested | Actual Time |
 | --------------------- | :------: | :------------: | :-----------: | :---------: |
 | Proposal              |    H     |      5hrs      |      ---      |    8hrs     |
-| Research              |    H     |      2hrs      |      .25      |   2.15hrs   |
+| Research              |    H     |      2hrs      |      .25hrs      |   2.15hrs   |
 | Set up Models         |    H     |      1hr       |      ---      |   .75hrs    |
 | Seed Data             |    H     |     .5hrs      |      ---      |    .5hrs    |
 | Set up Routes         |    H     |     .5hrs      |      ---      |    .5hrs    |
-| Set up Controllers    |    H     |      3hrs      |      .25      |   2.25hrs   |
+| Set up Controllers    |    H     |      3hrs      |      .25hrs      |   2.25hrs   |
 | Test Routes           |    H     |      2hrs      |      ---      |   1.5hrs    |
 | Deploy to Heroku      |    H     |     .5hrs      |      ---      |     TBD     |
 | Create React Skeleton |    H     |     .5hrs      |      ---      |    .6hrs    |
@@ -180,10 +180,10 @@ src
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |   .05hrs    |
 | DishDetails           |    H     |      1hrs      |      ---      |    .1hrs    |
-| Basket                |    H     |      3hrs      |      .5       |    .5hrs    |
+| Basket                |    H     |      3hrs      |      .5hrs       |    .5hrs    |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
-| AddDish               |    H     |      1hrs      |      .5     |     TBD     |
-| EditDish              |    H     |      1hrs      |      ---      |     TBD     |
+| AddDish               |    H     |      1hrs      |      1hrs     |     TBD     |
+| EditDish              |    H     |      1hrs      |      .25hrs      |     TBD     |
 | Authentication        |    H     |      2hr       |      ---      |    .6hrs    |
 | Global CSS            |    H     |      2hrs      |      ---      |     TBD     |
 | Layout CSS            |    H     |      1hr       |      ---      |     TBD     |

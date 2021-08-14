@@ -3,6 +3,8 @@ import { Link, useHistory, useParams } from "react-router-dom";
 import { editDish, deleteDish, getOneDish } from "../../services/dishes";
 import { handleChange } from "../../utils/helpers";
 
+// TODO: default image
+
 const EditDish = () => {
   const [form, setForm] = useState({});
   const history = useHistory();
@@ -15,12 +17,17 @@ const EditDish = () => {
     }
     fetchDish()
   },[])
-  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // const res = await createDish(form)
-    // if (res) history.push("/shop");
+    const res = await editDish(id, form)
+    if (res) history.push("/shop");
   };
+  
+  const handleDelete = async() => {
+    const res = await deleteDish(id)
+    if (res) history.push("/shop")
+  }
 
   return (
     <div className="edit-dish">
@@ -28,6 +35,7 @@ const EditDish = () => {
         <h3>Edit Dish</h3>
         <Link to="/shop">
           <div className="go-back">Return Without Saving</div>
+          <button onClick={handleDelete}>Delete</button>
         </Link>
       </header>
       <form className="dish-form" id="edit-dish" onSubmit={handleSubmit}>
