@@ -10,10 +10,7 @@ import "./App.css";
 
 function App() {
   const [user, setUser] = useState(null);
-  const [basket, setBasket] = useState({
-    id: null,
-    line_items: []
-  });
+  const [basket, setBasket] = useState(null);
 
   useEffect(() => {
     const verifyUser = async() => {
@@ -32,9 +29,9 @@ function App() {
     return () => {
       const clearBasket = async () => {
         await deleteBasket(basket.id);
-        setBasket();
+        setBasket(null);
       };
-      // clearBasket();
+      clearBasket();
     };
   }, []);
 

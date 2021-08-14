@@ -4,27 +4,29 @@ import DishDetails from "../../components/DishDetails/DishDetails";
 import { getAllDishes } from "../../services/dishes";
 
 const Shop = ({ user, basket }) => {
-  const [dishes, setDishes] = useState([])
+  const [dishes, setDishes] = useState([]);
 
   useEffect(() => {
-    const fetchAllDishes = async() => {
-      const allDishes = await getAllDishes()
-      setDishes(allDishes)
-    }
-    fetchAllDishes()
-  },[])
+    const fetchAllDishes = async () => {
+      const allDishes = await getAllDishes();
+      setDishes(allDishes);
+    };
+    fetchAllDishes();
+  }, []);
 
   return (
     <div className="shop">
-      <h3>Shop</h3>
-      {user ? (
-        <Link to="/add-dish">Add New</Link>
-      ) : (
-        <Link to="/basket">Basket</Link>
-      )}
+      <header>
+        <h3>Shop</h3>
+        {user ? (
+          <Link to="/add-dish">Add New</Link>
+        ) : (
+          <Link to="/basket">Basket</Link>
+        )}
+      </header>
       <div className="dishes-div">
-        {dishes?.map(dish => (
-          <DishDetails key={dish.id} user={user} dish={dish} basket={basket}/>
+        {dishes?.map((dish) => (
+          <DishDetails key={dish.id} user={user} dish={dish} basket={basket} />
         ))}
       </div>
     </div>
