@@ -11,6 +11,9 @@ const AddDish = () => {
     img_url: "",
   });
 
+  const handleSubmit = async() => {
+
+  }
   return (
     <div className="add-dish">
       <header>
@@ -20,48 +23,52 @@ const AddDish = () => {
         </Link>
       </header>
       <form className="dish-form" id="add-dish">
-        <img src={form.img_url} alt="image-preview" />
-        <input
-          id="img-url"
-          type="text"
-          placeholder="img.jpg"
-          name="img_url"
-          onChange={(e) => handleChange(e, form, setForm)}
-        />
-        <input
-          id="name"
-          type="text"
-          placeholder="NAME OF DISH"
-          name="name"
-          onChange={(e) => handleChange(e, form, setForm)}
-          style={{ textTransform: "uppercase" }}
-        />
-        <input
-          id="description"
-          type="text"
-          placeholder="Dish description"
-          name="description"
-          onChange={(e) => handleChange(e, form, setForm)}
-        />
-        <div className="num-inputs">
-          $
+        <div className="form-left">
+          <img src={form.img_url} alt="image-preview" />
           <input
-            id="price"
-            type="number"
-            placeholder="Price"
-            name="price"
-            onChange={(e) => handleChange(e, form, setForm)}
-          />
-          Inventory:{" "}
-          <input
-            id="inventory"
-            type="number"
-            placeholder="0"
-            name="inventory"
+            id="img-url"
+            type="text"
+            placeholder="img.jpg"
+            name="img_url"
             onChange={(e) => handleChange(e, form, setForm)}
           />
         </div>
-        <button>Save</button>
+        <div className="form-right">
+          <input
+            id="name"
+            type="text"
+            placeholder="NAME OF DISH"
+            name="name"
+            onChange={(e) => handleChange(e, form, setForm)}
+            style={{ textTransform: "uppercase" }}
+          />
+          <input
+            id="description"
+            type="text"
+            placeholder="Dish description"
+            name="description"
+            onChange={(e) => handleChange(e, form, setForm)}
+          />
+          <div className="num-inputs">
+            $
+            <input
+              id="price"
+              type="number"
+              placeholder="Price"
+              name="price"
+              onChange={(e) => handleChange(e, form, setForm)}
+            />
+            Inventory:{" "}
+            <input
+              id="inventory"
+              type="number"
+              placeholder="0"
+              name="inventory"
+              onChange={(e) => handleChange(e, form, setForm)}
+            />
+          </div>
+          <button>Save</button>
+        </div>
       </form>
     </div>
   );
