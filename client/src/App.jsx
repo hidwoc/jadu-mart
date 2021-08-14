@@ -40,7 +40,7 @@ function App() {
         <Route exact path="/login">
           <Login setUser={setUser} />
         </Route>
-        <Main user={user} basket={basket}/>
+        <Main user={user} basket={basket} setBasket={setBasket}/>
       </Layout>
     </div>
   );

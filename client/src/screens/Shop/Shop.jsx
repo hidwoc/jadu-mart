@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import DishDetails from "../../components/DishDetails/DishDetails";
 import { getAllDishes } from "../../services/dishes";
 
-const Shop = ({ user, basket }) => {
+const Shop = ({ user, basket, setBasket }) => {
   const [dishes, setDishes] = useState([]);
 
   useEffect(() => {
@@ -24,9 +24,10 @@ const Shop = ({ user, basket }) => {
           <Link to="/basket">Basket</Link>
         )}
       </header>
+      // TODO 2 sort images so they don't autosort by updated_at
       <div className="dishes-div">
         {dishes?.map((dish) => (
-          <DishDetails key={dish.id} user={user} dish={dish} basket={basket} />
+          <DishDetails key={dish.id} user={user} dish={dish} basket={basket} setBasket={setBasket} />
         ))}
       </div>
     </div>

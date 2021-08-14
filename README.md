@@ -179,7 +179,7 @@ src
 | Footer                |    H     |      1hr       |      ---      |   .25hrs    |
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |   .05hrs    |
-| DishDetails           |    H     |      1hrs      |      ---      |    .1hrs    |
+| DishDetails           |    H     |      1hrs      |      .5hrs      |    .1hrs    |
 | Basket                |    H     |      3hrs      |      .5hrs       |    .5hrs    |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      1hrs     |     TBD     |
