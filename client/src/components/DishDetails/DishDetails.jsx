@@ -1,7 +1,5 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { addToBasket } from '../../services/baskets';
-import { addToCart } from '../../services/lineItems';
 
 const DishDetails = ({user, basket, dish}) => {
 

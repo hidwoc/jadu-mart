@@ -25,13 +25,13 @@ function App() {
       setBasket(newBasket);
     };
     getNewBasket();
-    return () => {
-      const clearBasket = async () => {
-        await deleteBasket(basket.id);
-        setBasket(null);
-      };
-      clearBasket();
-    };
+    // return () => {
+    //   const clearBasket = async () => {
+    //     await deleteBasket(basket.id);
+    //     setBasket(null);
+    //   };
+    //   clearBasket();
+    // };
   }, []);
 
   return (

@@ -13,6 +13,21 @@ const Basket = ({ basket }) => {
     fetchBasket();
   }, [basket.id]);
 
+  const handleRemove = async() => {
+    return null
+  }
+
+  const handleReduce = async() => {
+    return null
+  }
+
+  const handleAdd = async() => {
+    return null
+  }
+
+  const handleOrder = async() => {
+    return null
+  }
   return (
     <div className="basket-screen">
       <header>
@@ -35,8 +50,10 @@ const Basket = ({ basket }) => {
             <button>Remove From Cart</button>
             <p className="line-name">{lineItem.dish.name}</p>
             <p className="line-price">${lineItem.dish.price}</p>
+            {/* TODO: onClick=reduceQuantity */}
             <button>-</button>
             <p className="line=quantity">{lineItem.quantity}</p>
+            {/* TODO: onClick=addQuantity */}
             <button>+</button>
             {/* TODO: render calculated attribute */}
             <p>{lineItem.subtotal}</p>

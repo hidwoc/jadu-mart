@@ -182,7 +182,7 @@ src
 | DishDetails           |    H     |      1hrs      |      ---      |    .1hrs    |
 | Basket                |    H     |      3hrs      |      .5       |    .5hrs    |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
-| AddDish               |    H     |      1hrs      |      ---      |     TBD     |
+| AddDish               |    H     |      1hrs      |      .5     |     TBD     |
 | EditDish              |    H     |      1hrs      |      ---      |     TBD     |
 | Authentication        |    H     |      2hr       |      ---      |    .6hrs    |
 | Global CSS            |    H     |      2hrs      |      ---      |     TBD     |
