@@ -21,7 +21,7 @@ const DishDetails = ({ user, basket, setBasket, dish }) => {
   return (
     <div className="dish-details">
       <div className="details-left">
-        <img src={dish.img_url} alt={dish.name} />
+        <img src={dish.img_url} alt={dish.name} width="300"/>
       </div>
       <div className="details-right">
         <h4>{dish.name.toUpperCase()}</h4>

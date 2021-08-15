@@ -40,7 +40,7 @@ const EditDish = () => {
       </header>
       <form className="dish-form" id="edit-dish" onSubmit={handleSubmit}>
         <div className="form-left">
-          <img src={form.img_url} alt="preview" />
+          <img src={form.img_url} alt="preview" width="300"/>
           <input
             id="img-url"
             type="text"

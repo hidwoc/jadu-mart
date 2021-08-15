@@ -18,7 +18,7 @@ const AddDish = () => {
     const res = await createDish(form)
     if (res) history.push('/shop') 
   }
-  
+
   return (
     <div className="add-dish">
       <header>
@@ -29,7 +29,7 @@ const AddDish = () => {
       </header>
       <form className="dish-form" id="add-dish" onSubmit={handleSubmit}>
         <div className="form-left">
-          <img src={form.img_url} alt="preview" />
+          <img src={form.img_url} alt="preview" width="300"/>
           <input
             id="img-url"
             type="text"
