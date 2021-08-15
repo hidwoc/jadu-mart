@@ -24,7 +24,7 @@ const Shop = ({ user, basket, setBasket }) => {
           <Link to="/basket">Basket</Link>
         )}
       </header>
-      // TODO 2 sort images so they don't autosort by updated_at
+      {/* // TODO 2 sort images so they don't autosort by updated_at */}
       <div className="dishes-div">
         {dishes?.map((dish) => (
           <DishDetails key={dish.id} user={user} dish={dish} basket={basket} setBasket={setBasket} />

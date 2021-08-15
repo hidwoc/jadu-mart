@@ -1,4 +1,4 @@
-import { NavLink, useHistory } from "react-router-dom";
+import { NavLink, Link, useHistory } from "react-router-dom";
 import { logout } from "../../services/users";
 import "./Footer.css";
 
@@ -29,7 +29,41 @@ const Footer = ({ user, setUser }) => {
       </div>
       <div className="footer-right">
         <div id="copyright">© Heidi Choi 2021</div>
-        <div className="socials">🙈 🙉 🙊</div>
+        <div className="socials">
+          <Link
+            to={{ pathname: "https://www.instagram.com/hidwoc/" }}
+            target="_blank"
+          >
+            <img
+              id="instagram"
+              src={`${process.env.PUBLIC_URL}/assets/images/InstaOrange.png`}
+              alt="instagram-logo"
+              width="20"
+            />
+          </Link>
+          <Link
+            to={{ pathname: "https://github.com/hidwoc/jadu-mart/tree/main" }}
+            target="_blank"
+          >
+            <img
+              id="github"
+              src={`${process.env.PUBLIC_URL}/assets/images/GithubOrange.png`}
+              alt="github-logo"
+              width="20"
+            />
+          </Link>
+          <Link
+            to={{ pathname: "https://www.linkedin.com/in/heidischoi/" }}
+            target="_blank"
+          >
+            <img
+              id="linkedin"
+              src={`${process.env.PUBLIC_URL}/assets/images/LinkdinOrange.png`}
+              alt="linkedin logo"
+              width="20"
+            />
+          </Link>
+        </div>
       </div>
     </footer>
   );
