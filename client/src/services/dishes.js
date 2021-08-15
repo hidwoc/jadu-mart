@@ -38,7 +38,7 @@ export const editDish = async (id, formData) => {
 
 export const deleteDish = async (id) => {
   try {
-    const res = await api.destroy(`/dishes/${id}`);
+    const res = await api.delete(`/dishes/${id}`);
     return res.data;
   } catch {
     return false;

@@ -167,7 +167,7 @@ src
 | Proposal              |    H     |      5hrs      |      ---      |    8hrs     |
 | Research              |    H     |      2hrs      |      ---      |   2.4hrs    |
 | Set up Models         |    H     |      1hr       |      ---      |   .75hrs    |
-| Seed Data             |    H     |     .5hrs      |      ---      |    .5hrs    |
+| Seed Data             |    H     |     .5hrs      |      .4hrs      |    .5hrs    |
 | Set up Routes         |    H     |     .5hrs      |      ---      |    .5hrs    |
 | Set up Controllers    |    H     |      3hrs      |      .1      |   2.5hrs    |
 | Test Routes           |    H     |      2hrs      |      ---      |   1.5hrs    |
@@ -197,7 +197,7 @@ src
 | AddDish CSS           |    H     |      2hrs      |      ---      |     TBD     |
 | EditDish CSS          |    H     |      1hrs      |      ---      |     TBD     |
 | Deploy to Netlify     |    H     |     .5hrs      |      ---      |     TBD     |
-| TOTAL                 |          |    45.5hrs     |      ---      |   20.7hrs   |
+| TOTAL                 |          |    45.5hrs     |      1.5hrs      |   20.7hrs   |
 
 <br>
 
