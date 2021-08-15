@@ -4,7 +4,7 @@ class DishesController < ApplicationController
 
   # GET /dishes
   def index
-    @dishes = Dish.all
+    @dishes = Dish.all.order(:created_at)
 
     render json: @dishes
   end
