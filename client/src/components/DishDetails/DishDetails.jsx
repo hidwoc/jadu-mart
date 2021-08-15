@@ -11,7 +11,7 @@ const DishDetails = ({ user, basket, setBasket, dish }) => {
   const outOfStock = <button id="out-of-stock">Out of Stock</button>;
 
   const handleInventory = () => {
-    if (!dish.inventory) {
+    if (dish.inventory <= 0) {
       return outOfStock;
     } else {
       return inStock;

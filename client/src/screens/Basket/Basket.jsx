@@ -1,9 +1,15 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import { getBasket } from "../../services/baskets";
+import { Link, useHistory } from "react-router-dom";
+import { getBasket, placeOrder } from "../../services/baskets";
+import {
+  addQuantity,
+  reduceQuantity,
+  removeFromBasket,
+} from "../../services/lineItems";
 
-const Basket = ({ basket }) => {
+const Basket = ({ basket, setBasket }) => {
   const [viewBasket, setViewBasket] = useState(null);
+  const history = useHistory()
 
   useEffect(() => {
     const fetchBasket = async () => {
@@ -13,21 +19,33 @@ const Basket = ({ basket }) => {
     fetchBasket();
   }, [basket.id]);
 
-  const handleRemove = async() => {
-    return null
-  }
+  const handleRemove = async (itemID) => {
+    const res = await removeFromBasket(itemID);
+    console.log(res);
+    setViewBasket((prevState) =>
+      prevState.line_items.filter((lineItem) => lineItem.id !== itemID)
+    );
+    // ? will subsequent views of Basket be outdated?
+    // TODO ! not rendering newViewBasket in time
+  };
 
-  const handleReduce = async() => {
-    return null
-  }
+  const handleAdd = async (itemID) => {
+    const res = await addQuantity(itemID);
+    console.log(res);
+    // setViewBasket(prevState => prevState.line_items.find(lineItem => lineItem.id === itemID) = res)
+  };
 
-  const handleAdd = async() => {
-    return null
-  }
+  const handleReduce = async (itemID) => {
+    const res = await reduceQuantity(itemID);
+    console.log(res);
+  };
 
-  const handleOrder = async() => {
-    return null
-  }
+  const handleOrder = async (basketID) => {
+    const res = await placeOrder(basketID)
+    setBasket(null)
+    history.push('/shop')
+  };
+
   return (
     <div className="basket-screen">
       <header>
@@ -45,16 +63,19 @@ const Basket = ({ basket }) => {
       <div className="basket-items">
         {viewBasket?.line_items?.map((lineItem) => (
           <div className="line-item" id={lineItem.dish.name} key={lineItem.id}>
-            <img src={lineItem.dish.img_url} alt={lineItem.dish.name} />
-          {/* TODO: onClick=remove from cart */}
-            <button>Remove From Cart</button>
+            <img
+              src={lineItem.dish.img_url}
+              alt={lineItem.dish.name}
+              width="100"
+            />
+            <button onClick={() => handleRemove(lineItem.id)}>
+              Remove from Basket
+            </button>
             <p className="line-name">{lineItem.dish.name}</p>
             <p className="line-price">${lineItem.dish.price}</p>
-            {/* TODO: onClick=reduceQuantity */}
-            <button>-</button>
+            <button onClick={() => handleReduce(lineItem.id)}>-</button>
             <p className="line=quantity">{lineItem.quantity}</p>
-            {/* TODO: onClick=addQuantity */}
-            <button>+</button>
+            <button onClick={() => handleAdd(lineItem.id)}>+</button>
             {/* TODO: render calculated attribute */}
             <p>{lineItem.subtotal}</p>
           </div>
@@ -62,8 +83,7 @@ const Basket = ({ basket }) => {
         <div className="basket-summary">
           {/* TODO: render calculated attribute */}
           <h2>Grand Total: ${viewBasket?.total}</h2>
-          {/* TODO: onClick=placeOrder */}
-          <button>Place Order</button>
+          <button onClick={() => handleOrder(viewBasket.id)}>Place Order</button>
         </div>
       </div>
     </div>

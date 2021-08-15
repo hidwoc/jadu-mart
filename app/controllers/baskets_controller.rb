@@ -1,6 +1,6 @@
 class BasketsController < ApplicationController
   before_action :set_basket, only: [:show, :place_order, :destroy, :add_line_item_to_basket]
-  after_action :destroy, only: :place_order
+  # after_action :destroy, only: :place_order
 
   # GET /baskets/:id
   def show
@@ -13,15 +13,15 @@ class BasketsController < ApplicationController
     render json: @basket, status: :created
   end
 
-  # PUT /baskets/:id
+  # DELETE /baskets/:id
   def place_order
     @basket.line_items.map do |line_item|
       @dish = Dish.find(line_item.dish_id)
       @dish.inventory -= line_item.quantity
       @dish.save
     end
-
-    render json: Dish.all
+    @basket.destroy
+    render Dish.all, status: :ok
   end
 
   # DELETE /baskets/:id

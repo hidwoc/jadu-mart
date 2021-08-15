@@ -20,11 +20,11 @@ function App() {
   },[])
 
   useEffect(() => {
-    const getNewBasket = async () => {
+    const makeNewBasket = async () => {
       const newBasket = await createBasket();
       setBasket(newBasket);
     };
-    getNewBasket();
+    makeNewBasket();
     // return () => {
     //   const clearBasket = async () => {
     //     await deleteBasket(basket.id);

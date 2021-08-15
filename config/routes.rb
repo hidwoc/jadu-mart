@@ -4,8 +4,8 @@ Rails
   .draw do
     get '/baskets/:id' => 'baskets#show', :as => 'basket'
     post '/baskets' => 'baskets#create'
-    put '/baskets/:id' => 'baskets#place_order'
     put '/baskets/:id/add' => 'baskets#add_line_item_to_basket'
+    delete '/baskets/:id/order' => 'baskets#place_order'
     delete '/baskets/:id' => 'baskets#destroy'
 
     # post '/line_items' => 'line_items#create'

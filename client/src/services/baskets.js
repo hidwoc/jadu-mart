@@ -27,7 +27,6 @@ export const addToBasket = async(basketID, dishID) => {
   }
 }
 
-
 // TODO: return null either way to setBasket(null)?
 export const deleteBasket = async(basketID) => {
   try {
@@ -35,5 +34,14 @@ export const deleteBasket = async(basketID) => {
     return res.data
   } catch {
     return null
+  }
+}
+
+export const placeOrder = async(basketID) => {
+  try {
+    const res = await api.delete(`/baskets/${basketID}/order`)
+    return res.data
+  } catch {
+    return false
   }
 }
