@@ -154,7 +154,7 @@ src
 | Wed Aug 11   |  Project Pitches Approval   |  Complete  |
 | Thurs Aug 12 | Set up backend, test routes |  Complete  |
 | Fri Aug 13   |    Build React Skeleton     |  Complete  |
-| Sat Aug 14   |    Render all components    | Incomplete |
+| Sat Aug 14   |    Render all components    |  Complete  |
 | Sun Aug 15   | Successful CRUD on Frontend | Incomplete |
 | Mon Aug 16   |    Deploy to Heroku, CSS    | Incomplete |
 | Tue Aug 17   |        Advanced CSS         | Incomplete |
@@ -179,7 +179,7 @@ src
 | Footer                |    H     |      1hr       |     .3hrs     |   .25hrs    |
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |   .05hrs    |
-| DishDetails           |    H     |      1hrs      |     .5hrs     |    .1hrs    |
+| DishDetails           |    H     |      1hrs      |     .6hrs     |    .1hrs    |
 | Basket                |    H     |      3hrs      |     .5hrs     |    .5hrs    |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |     1hrs      |     TBD     |
