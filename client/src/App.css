@@ -1,3 +1,5 @@
+/* TODO center header a */
+/* todo fix header? */
 :root {
   --highlight: #DB6900;
   --support : #F09948;
@@ -20,12 +22,16 @@ header {
 }
 
 header h3 {
-  margin: 0;
+  color: var(--highlight);
   font-family: 'Zeyada', cursive;
-  color: var(--highlight)
+  font-size:40px;
+  margin: 0;
 }
 
 header a {
   color: black;
+  font-size: 18px;
+  height: 18px;
+  margin: 0;
   text-decoration: none;
 }

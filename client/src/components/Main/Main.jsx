@@ -5,10 +5,11 @@ import Basket from "../../screens/Basket/Basket";
 import EditDish from "../../screens/EditDish/EditDish";
 import Shop from "../../screens/Shop/Shop";
 import Welcome from "../../screens/Welcome/Welcome";
+import "./Main.css"
 
 const Main = ({user, basket, setBasket, setToggleNewBasket}) => {
   return (
-    <div>
+    <div className="main">
       <Route exact path="/">
         <Welcome />
       </Route>

@@ -9,7 +9,7 @@ const Welcome = () => {
       <h1 id="jadu-mart">Jadu Mart</h1>
       <p id="marketplace-of">Marketplace of Kimchi & Banchan by Heidi</p>
       <Link to="/shop">
-        <button>SHOP THE GOODS</button>
+        <button id="shop-goods">SHOP THE GOODS</button>
       </Link>
     </div>
   );

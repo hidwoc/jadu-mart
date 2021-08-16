@@ -1,9 +1,33 @@
 .welcome {
   color: var(--support);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  /* position: absolute; */
+  top: 50%;
+}
+
+#welcome-to {
+  font-size: 32px;
+  margin: 0;
+  display: inline;
 }
 
 #jadu-mart {
-  font-family: 'Zeyada', cursive;
   color: var(--highlight);
+  font-family: 'Zeyada', cursive;
+  font-size: 150px;
+  margin: 0;
+  display: inline;
+}
+
+#marketplace-of {
+  margin: 0;
+}
+
+#shop-goods {
+  margin: 0;
 }
 

@@ -1,4 +1,11 @@
+.layout-div {
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+}
+
 .layout-children {
   display: flex;
   justify-content: center;
+  width: 85vw;
 }
