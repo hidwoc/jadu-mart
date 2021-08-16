@@ -22,12 +22,12 @@ const DishDetails = ({ user, basket, setBasket, dish }) => {
   return (
     <div className="dish-details">
       <div className="details-left">
-        <img src={dish.img_url} alt={dish.name} width="300"/>
+        <img src={dish.img_url} alt={dish.name} width="350"/>
       </div>
       <div className="details-right">
         <h4 className="dish-name">{dish.name.toUpperCase()}</h4>
-        <p>{dish.description}</p>
-        <h5>${dish.price}</h5>
+        <p className="dish-description">{dish.description}</p>
+        <p className="dish-price">${dish.price}</p>
         {user ? (
           <Link to={`/edit-dish/${dish.id}`}>Edit</Link>
         ) : (

@@ -1,9 +1,42 @@
 .dish-details {
   display: flex;
   flex-direction: row;
-  width: 90vw;
+  margin: 30px auto;
+  max-width: 900px;
+}
+
+.details-left img {
+  margin: 0 auto;
+  box-shadow: 1px 2px 2px #cecece;
+}
+
+.details-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-content: flex-start;
+  margin: 10px;
+  padding-left: 40px;
 }
 
 .dish-name {
-  color: var(--highlight)
+  color: var(--highlight);
+  font-size: 50px;
+  margin: 0;
+}
+
+.dish-description {
+  font-size: 20px;
+}
+
+.dish-price {
+  font-size: 30px;
+  margin: 0;
+}
+
+.dish-details button {
+  font-size: 30px;
+  margin: 5px;
+  padding: 10px;
+  max-width: 325px;
 }

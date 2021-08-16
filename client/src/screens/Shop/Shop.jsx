@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import DishDetails from "../../components/DishDetails/DishDetails";
 import { getAllDishes } from "../../services/dishes";
+import "./Shop.css"
 
 const Shop = ({ user, basket, setBasket }) => {
   const [dishes, setDishes] = useState([]);
