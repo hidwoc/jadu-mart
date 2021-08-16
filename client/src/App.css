@@ -9,10 +9,13 @@
 
 button {
   background-color: var(--light);
-  padding: 10px;
+  padding: 25px 50px;
   border: none;
   box-shadow: 1px 2px 2px #cecece;
   cursor: grab;
+  font-family: 'Didact Gothic', serif;
+  font-size: 35px;
+  color: var(--highlight);
 }
 
 header {

@@ -1,3 +1,4 @@
+/* TODO MEDIA QUERY */
 .welcome {
   color: var(--support);
   display: flex;
@@ -5,7 +6,7 @@
   justify-content: center;
   align-content: center;
   text-align: center;
-  /* margin: auto; */
+  margin-top: 10vh;
 }
 
 #welcome-to {
@@ -17,7 +18,7 @@
 #hero {
   position: relative;
   width: 600px;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 
 #jadu-mart {
