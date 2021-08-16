@@ -1,0 +1,23 @@
+:root {
+  --highlight: #DB6900;
+  --support : #F09948;
+  --light :#F5F5DC;
+  --dark: #B95C3B;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+header h3 {
+  margin: 0;
+  font-family: 'Zeyada', cursive;
+  color: var(--highlight)
+}
+
+header a {
+  color: black;
+  text-decoration: none;
+}
