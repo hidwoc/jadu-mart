@@ -5,6 +5,14 @@
   --dark: #B95C3B;
 }
 
+button {
+  background-color: var(--light);
+  padding: 10px;
+  border: none;
+  box-shadow: 1px 2px 2px #cecece;
+  cursor: grab;
+}
+
 header {
   display: flex;
   justify-content: space-between;
