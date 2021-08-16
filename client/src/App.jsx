@@ -10,6 +10,7 @@ import "./App.css";
 function App() {
   const [user, setUser] = useState(null);
   const [basket, setBasket] = useState(null);
+  const [toggleNewBasket, setToggleNewBasket] = useState(false)
 
   useEffect(() => {
     const verifyUser = async() => {
@@ -25,14 +26,15 @@ function App() {
       setBasket(newBasket);
     };
     makeNewBasket();
-    // return () => {
-    //   const clearBasket = async () => {
-    //     await deleteBasket(basket.id);
-    //     setBasket(null);
-    //   };
-    //   clearBasket();
-    // };
-  }, []);
+    return () => {
+      const clearBasket = async () => {
+        const res = await deleteBasket(basket.id);
+        console.log(res)
+        setBasket(null);
+      };
+      clearBasket();
+    };
+  }, [toggleNewBasket]);
 
   return (
     <div className="App">
@@ -40,7 +42,7 @@ function App() {
         <Route exact path="/login">
           <Login setUser={setUser} />
         </Route>
-        <Main user={user} basket={basket} setBasket={setBasket}/>
+        <Main user={user} basket={basket} setBasket={setBasket} setToggleNewBasket={setToggleNewBasket}/>
       </Layout>
     </div>
   );

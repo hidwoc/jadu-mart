@@ -7,7 +7,7 @@ import {
   removeFromBasket,
 } from "../../services/lineItems";
 
-const Basket = ({ basket, setBasket }) => {
+const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
   const [viewBasket, setViewBasket] = useState(null);
   const history = useHistory()
 
@@ -42,7 +42,7 @@ const Basket = ({ basket, setBasket }) => {
 
   const handleOrder = async (basketID) => {
     const res = await placeOrder(basketID)
-    setBasket(null)
+    setToggleNewBasket(curr => !curr)
     history.push('/shop')
   };
 
@@ -77,12 +77,14 @@ const Basket = ({ basket, setBasket }) => {
             <p className="line=quantity">{lineItem.quantity}</p>
             <button onClick={() => handleAdd(lineItem.id)}>+</button>
             {/* TODO: render calculated attribute */}
-            <p>{lineItem.subtotal}</p>
+            <p>${lineItem.subtotal}</p>
+            {console.log('LineItem Subtotal', lineItem.subtotal)}
           </div>
         ))}
         <div className="basket-summary">
           {/* TODO: render calculated attribute */}
           <h2>Grand Total: ${viewBasket?.total}</h2>
+          {console.log('Basket Total', viewBasket?.total)}
           <button onClick={() => handleOrder(viewBasket.id)}>Place Order</button>
         </div>
       </div>

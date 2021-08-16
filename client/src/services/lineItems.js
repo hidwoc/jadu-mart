@@ -26,3 +26,9 @@ export const reduceQuantity = async (id) => {
     return false;
   }
 }
+
+// export const subtotal = async(id) => {
+//   try {
+//     const res = await api
+//   }
+// }

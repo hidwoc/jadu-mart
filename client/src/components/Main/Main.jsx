@@ -6,7 +6,7 @@ import EditDish from "../../screens/EditDish/EditDish";
 import Shop from "../../screens/Shop/Shop";
 import Welcome from "../../screens/Welcome/Welcome";
 
-const Main = ({user, basket, setBasket}) => {
+const Main = ({user, basket, setBasket, setToggleNewBasket}) => {
   return (
     <div>
       <Route exact path="/">
@@ -16,7 +16,7 @@ const Main = ({user, basket, setBasket}) => {
         <Shop user={user} basket={basket} setBasket={setBasket}/>
       </Route>
       <Route path="/basket">
-        <Basket basket={basket} setBasket={setBasket}/>
+        <Basket basket={basket} setBasket={setBasket} setToggleNewBasket={setToggleNewBasket}/>
       </Route>
       <Route path="/add-dish">
         <AddDish />
