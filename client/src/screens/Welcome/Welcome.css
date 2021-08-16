@@ -16,6 +16,8 @@
 
 #hero {
   position: relative;
+  width: 600px;
+  margin: 0 auto;
 }
 
 #jadu-mart {
@@ -27,10 +29,10 @@
 }
 
 #marketplace-of {
-  font-size: 25px;
+  font-size: 27px;
   margin: 0;
   position: absolute;
-  top: 150px;
+  top: 160px;
   right: 0;
 }
 
