@@ -4,7 +4,7 @@ import Layout from "./Layout/Layout";
 import Main from "./components/Main/Main";
 import Login from "./screens/Login/Login";
 import { verify } from "./services/users";
-import { createBasket, deleteBasket } from "./services/baskets";
+import { createBasket } from "./services/baskets";
 import "./App.css";
 
 function App() {
@@ -26,14 +26,15 @@ function App() {
       setBasket(newBasket);
     };
     makeNewBasket();
-    return () => {
-      const clearBasket = async () => {
-        const res = await deleteBasket(basket.id);
-        console.log(res)
-        setBasket(null);
-      };
-      clearBasket();
-    };
+    // return () => {
+    //   const clearBasket = async () => {
+    //     const res = await deleteBasket(basket.id);
+    //     console.log(res)
+    //     setBasket(null);
+    //     console.log('hello')
+    //   };
+    //   clearBasket();
+    // };
   }, [toggleNewBasket]);
 
   return (

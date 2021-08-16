@@ -4,8 +4,8 @@ class Basket < ApplicationRecord
 
   def total
     sum = 0
-    self.line_items.each do |line_item|
-      sum+= line_item.total_price
+    line_items.each do |line_item|
+      sum+= line_item.subtotal
     end
     return sum
   end

@@ -4,7 +4,17 @@ class BasketsController < ApplicationController
 
   # GET /baskets/:id
   def show
-    render json: @basket, include: {:line_items => {include: :dish}}
+    # render json: @basket, include: {:line_items => {include: :dish}}
+    render json: @basket.to_json( 
+      :include => {
+        :line_items => {
+          :include => :dish
+        },
+      },
+      :methods => :total
+    )
+    
+  
   end
 
   # POST /baskets

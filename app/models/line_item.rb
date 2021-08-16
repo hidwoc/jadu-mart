@@ -3,6 +3,6 @@ class LineItem < ApplicationRecord
   belongs_to :basket
 
   def subtotal
-    self.quantity * self.dish.price
+    quantity * dish.price
   end
 end

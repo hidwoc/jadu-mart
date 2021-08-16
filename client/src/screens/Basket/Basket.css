@@ -1,13 +1,30 @@
 .basket-column-header {
   color: var(--highlight);
   display: flex;
+  font-size: 20px;
   justify-content: space-evenly;
+  text-align: center;
+}
+
+#column-dish {
+  width: 40%;
+}
+#column-price {
+  width: 10%; 
+}
+#column-quantity {
+  width: 25%;
+}
+#column-subtotal {
+  width: 25%;
 }
 
 .line-item {
   display: flex;
   justify-content: space-evenly;
   align-content: center;
+  font-size: 24px;
+  width: 100%;
 }
 
 .line-item-left {

@@ -139,7 +139,7 @@ src
       |__ apiConfig
       |__ users
       |__ dishes
-      |__ line_items
+      |__ lineItems
       |__ baskets
 |__App.jsx
 |__App.css
@@ -156,7 +156,7 @@ src
 | Fri Aug 13   |    Build React Skeleton     |  Complete  |
 | Sat Aug 14   |    Render all components    |  Complete  |
 | Sun Aug 15   | Successful CRUD on Frontend | Incomplete |
-| Mon Aug 16   |    Deploy to Heroku, CSS    | Incomplete |
+| Mon Aug 16   |    Deploy to Heroku, CSS    | Complete |
 | Tue Aug 17   |        Advanced CSS         | Incomplete |
 | Wed Aug 18   |        Presentation         | Incomplete |
 
@@ -171,7 +171,7 @@ src
 | Set up Routes         |    H     |     .5hrs      |   ---    |    .5hrs    |
 | Set up Controllers    |    H     |      3hrs      |   ---    |   2.6hrs    |
 | Test Routes           |    H     |      2hrs      |   ---    |   1.5hrs    |
-| Deploy to Heroku      |    H     |     .5hrs      |   ---    |     TBD     |
+| Deploy to Heroku      |    H     |     .5hrs      |   .5hrs    |     TBD     |
 | Create React Skeleton |    H     |     .5hrs      |   ---    |    .6hrs    |
 | Frontend API Config   |    H     |      1hr       |   ---    |   .45hrs    |
 | Layout                |    H     |      1hr       |   ---    |     TBD     |
@@ -180,7 +180,7 @@ src
 | Welcome               |    H     |      1hr       |   ---    |     TBD     |
 | Shop                  |    H     |      1hr       |   ---    |   .05hrs    |
 | DishDetails           |    H     |      1hrs      |   ---    |    .7hrs    |
-| Basket                |    H     |      3hrs      |   ---    |    2hrs     |
+| Basket                |    H     |      3hrs      |   .5hrs    |    2hrs     |
 | Login                 |    H     |      2hrs      |   ---    |    .5hrs    |
 | AddDish               |    H     |      1hrs      |   ---    |     1hr     |
 | EditDish              |    H     |      1hrs      |   ---    |   .25hrs    |
@@ -189,14 +189,14 @@ src
 | Layout CSS            |    H     |      1hr       |   ---    |     TBD     |
 | Main CSS              |    H     |      1hr       |   ---    |     TBD     |
 | Footer CSS            |    H     |      1hrs      |   .1hrs    |    .1hrs    |
-| Welcome CSS           |    H     |      1hr       |   .5hrs    |     TBD     |
-| Shop CSS              |    H     |      1hrs      |   ---    |     TBD     |
-| DishDetails CSS       |    H     |      2hrs      |   ---    |     TBD     |
+| Welcome CSS           |    H     |      1hr       |   .75hrs    |     TBD     |
+| Shop CSS              |    H     |      1hrs      |   .25hrs    |     TBD     |
+| DishDetails CSS       |    H     |      2hrs      |   .25hrs    |     TBD     |
 | Basket CSS            |    H     |      3hrs      |   ---    |     TBD     |
 | Login CSS             |    H     |      1hrs      |   ---    |     TBD     |
 | AddDish CSS           |    H     |      2hrs      |   ---    |     TBD     |
 | EditDish CSS          |    H     |      1hrs      |   ---    |     TBD     |
-| Deploy to Netlify     |    H     |     .5hrs      |   ---    |     TBD     |
+| Deploy to Netlify     |    H     |     .5hrs      |   .5hrs    |     TBD     |
 | TOTAL                 |          |    45.5hrs     |   ---    |   22.2hrs   |
 
 <br>

@@ -15,11 +15,15 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
 
   useEffect(() => {
     const fetchBasket = async () => {
-      const res = await getBasket(basket.id);
+      const res = await getBasket(basket?.id);
       setViewBasket(res);
     };
     fetchBasket();
-  }, [basket.id]);
+  }, [basket?.id]);
+
+  const handleNoBasket = <h4>Loading Basket...</h4>;
+
+  const handleEmptyBasket = <h4>Basket is Empty!</h4>;
 
   const handleRemove = async (itemID) => {
     const res = await removeFromBasket(itemID);
@@ -57,34 +61,47 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
         </Link>
       </header>
       <div className="basket-column-header">
-        <h4>Dish</h4>
-        <h4>Price</h4>
-        <h4>Quantity</h4>
-        <h4>Subtotal</h4>
+        <h4 id="column-dish">Dish</h4>
+        <h4 id="column-price">Price</h4>
+        <h4 id="column-quantity">Quantity</h4>
+        <h4 id="column-subtotal">Subtotal</h4>
       </div>
-      <div className="basket-items">
-        {viewBasket?.line_items?.map((lineItem) => (
-          <div className="line-item" id={lineItem.dish.name} key={lineItem.id}>
-            <div className="line-item-left">
-              <img
-                src={lineItem.dish.img_url}
-                alt={lineItem.dish.name}
-                width="100"
-              />
-              <button className="remove-from-basket" onClick={() => handleRemove(lineItem.id)}>
-                Remove from Basket
-              </button>
-            </div>
-            <p className="line-name">{lineItem.dish.name.toUpperCase()}</p>
-            <p className="line-price">${lineItem.dish.price}</p>
-            <button onClick={() => handleReduce(lineItem.id)}>-</button>
-            <p className="line=quantity">{lineItem.quantity}</p>
-            <button onClick={() => handleAdd(lineItem.id)}>+</button>
-            {/* TODO: render calculated attribute */}
-            <p>${lineItem.subtotal}</p>
-            {console.log("LineItem Subtotal", lineItem.subtotal)}
-          </div>
-        ))}
+        {!viewBasket
+          ? handleNoBasket
+          : viewBasket.line_items?.length < 1
+          ? handleEmptyBasket
+          : (<div className="basket-items">
+            {viewBasket.line_items.map((lineItem) => (
+              <div
+                className="line-item"
+                id={lineItem.dish.name}
+                key={lineItem.id}
+              >
+                <div className="line-dish-left">
+                  <img
+                    src={lineItem.dish.img_url}
+                    alt={lineItem.dish.name}
+                    width="150"
+                  />
+                  <button
+                    className="remove-from-basket"
+                    onClick={() => handleRemove(lineItem.id)}
+                  >
+                    Remove from Basket
+                  </button>
+                </div>
+                <p className="line-dish-name">
+                  {lineItem.dish.name.toUpperCase()}
+                </p>
+                <p className="line-price">${lineItem.dish.price}</p>
+                <button onClick={() => handleReduce(lineItem.id)}>-</button>
+                <p className="line=quantity">{lineItem.quantity}</p>
+                <button onClick={() => handleAdd(lineItem.id)}>+</button>
+                {/* TODO: render calculated attribute */}
+                <p>${lineItem.subtotal}</p>
+                {console.log("LineItem Subtotal", lineItem.subtotal)}
+              </div>
+            ))}
         <div className="basket-summary">
           {/* TODO: render calculated attribute */}
           <h2>Grand Total: ${viewBasket?.total}</h2>
@@ -93,7 +110,7 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
             Place Order
           </button>
         </div>
-      </div>
+      </div>)}
     </div>
   );
 };
