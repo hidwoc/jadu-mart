@@ -1,0 +1,9 @@
+.dish-details {
+  display: flex;
+  flex-direction: row;
+  width: 90vw;
+}
+
+.dish-name {
+  color: var(--highlight)
+}

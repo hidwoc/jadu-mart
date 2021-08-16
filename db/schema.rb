@@ -25,7 +25,7 @@ ActiveRecord::Schema.define(version: 2021_08_12_180917) do
     t.string "description"
     t.string "img_url"
     t.integer "price"
-    t.integer "in_stock"
+    t.integer "inventory"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -44,6 +44,7 @@ ActiveRecord::Schema.define(version: 2021_08_12_180917) do
     t.string "username"
     t.string "email"
     t.string "password_digest"
+    t.boolean "is_admin", default: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end

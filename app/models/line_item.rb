@@ -2,7 +2,7 @@ class LineItem < ApplicationRecord
   belongs_to :dish
   belongs_to :basket
 
-  def total_price
+  def subtotal
     self.quantity * self.dish.price
   end
 end

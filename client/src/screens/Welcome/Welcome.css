@@ -1,0 +1,40 @@
+.welcome {
+  color: var(--support);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+  /* margin: auto; */
+}
+
+#welcome-to {
+  font-size: 32px;
+  margin: 0;
+  display: inline;
+}
+
+#hero {
+  position: relative;
+}
+
+#jadu-mart {
+  color: var(--highlight);
+  font-family: 'Zeyada', cursive;
+  font-size: 150px;
+  margin: 0;
+  display: inline;
+}
+
+#marketplace-of {
+  font-size: 25px;
+  margin: 0;
+  position: absolute;
+  top: 150px;
+  right: 0;
+}
+
+#shop-goods {
+  margin: 20px;
+}
+

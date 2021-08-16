@@ -2,21 +2,22 @@ Rails
   .application
   .routes
   .draw do
-    get 'baskets/:id' => 'baskets#show', :as => 'basket'
-    post 'baskets/:id' => 'baskets#place_order'
-    delete 'baskets/:id' => 'baskets#destroy'
+    get '/baskets/:id' => 'baskets#show', :as => 'basket'
+    post '/baskets' => 'baskets#create'
+    put '/baskets/:id/add' => 'baskets#add_line_item_to_basket'
+    delete '/baskets/:id/order' => 'baskets#place_order'
+    delete '/baskets/:id' => 'baskets#destroy'
 
-    post 'line_items/:id/add' => 'line_items#add_quantity',
+    # post '/line_items' => 'line_items#create'
+    put '/line_items/:id/add' => 'line_items#add_quantity',
           :as => 'line_item_add'
-    post 'line_items/:id/reduce' => 'line_items#reduce_quantity',
+    put '/line_items/:id/reduce' => 'line_items#reduce_quantity',
           :as => 'line_item_reduce'
-    get 'line_items/:id' => 'line_items#show', :as => 'line_item'
-    delete 'line_items/:id' => 'line_items#remove_from_basket'
+    get '/line_items/:id' => 'line_items#show', :as => 'line_item'
+    delete '/line_items/:id' => 'line_items#remove_from_basket'
     
-    resources :dishes do
-      post 'line_items' => 'line_items#create'
-    end
-
+    resources :dishes
+    
     resources :users, only: [:create]
     post "/users/login", to: "users#login"
     get "/users/verify", to: "users#verify"

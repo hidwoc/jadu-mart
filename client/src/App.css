@@ -1,0 +1,37 @@
+/* TODO center header a */
+/* todo fix header? */
+:root {
+  --highlight: #DB6900;
+  --support : #F09948;
+  --light :#F5F5DC;
+  --dark: #B95C3B;
+}
+
+button {
+  background-color: var(--light);
+  padding: 10px;
+  border: none;
+  box-shadow: 1px 2px 2px #cecece;
+  cursor: grab;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+header h3 {
+  color: var(--highlight);
+  font-family: 'Zeyada', cursive;
+  font-size:40px;
+  margin: 0;
+}
+
+header a {
+  color: black;
+  font-size: 18px;
+  height: 18px;
+  margin: 0;
+  text-decoration: none;
+}
