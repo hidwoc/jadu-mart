@@ -25,7 +25,7 @@ const DishDetails = ({ user, basket, setBasket, dish }) => {
         <img src={dish.img_url} alt={dish.name} width="300"/>
       </div>
       <div className="details-right">
-        <h4>{dish.name.toUpperCase()}</h4>
+        <h4 className="dish-name">{dish.name.toUpperCase()}</h4>
         <p>{dish.description}</p>
         <h5>${dish.price}</h5>
         {user ? (

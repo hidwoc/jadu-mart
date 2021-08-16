@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useHistory } from "react-router-dom"
 import { login } from "../../services/users";
 import { handleChange } from "../../utils/helpers";
+import "./Login.css"
 
 const Login = ({setUser}) => {
   const [data, setData] = useState({
@@ -23,8 +24,8 @@ const Login = ({setUser}) => {
   }
 
   return (
-    <div>
-      Welcome Admin!
+    <div className="login">
+      <h2 id="welcome-admin">Welcome Admin!</h2>
       <form onSubmit={handleSubmit}>
         <div className="login-inputs">
           <label htmlFor="email">Email:</label>

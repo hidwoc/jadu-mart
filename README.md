@@ -185,7 +185,7 @@ src
 | AddDish               |    H     |      1hrs      |   ---    |     1hr     |
 | EditDish              |    H     |      1hrs      |   ---    |   .25hrs    |
 | Authentication        |    H     |      2hr       |   ---    |    .6hrs    |
-| Global CSS            |    H     |      2hrs      |   ---    |     TBD     |
+| Global CSS            |    H     |      2hrs      |   .75hrs    |     TBD     |
 | Layout CSS            |    H     |      1hr       |   ---    |     TBD     |
 | Main CSS              |    H     |      1hr       |   ---    |     TBD     |
 | Footer CSS            |    H     |      1hrs      |   ---    |    .1hrs    |

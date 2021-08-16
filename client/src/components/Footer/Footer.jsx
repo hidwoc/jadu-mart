@@ -14,7 +14,7 @@ const Footer = ({ user, setUser }) => {
   return (
     <footer>
       <div className="footer-left">
-        <div>Jadu Mart</div>
+        <div id="jadu-mart">Jadu Mart</div>
         <nav>
           <NavLink to="/">Home</NavLink>
           <NavLink to="/shop">Shop</NavLink>

@@ -1,0 +1,27 @@
+.basket-column-header {
+  color: var(--highlight);
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.line-item {
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+}
+
+.line-item-left {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+}
+
+.remove-from-basket {
+  border: none;
+  background-color: white;
+  color: var(--dark)
+}
+.basket-summary {
+  display: flex;
+  justify-content: space-evenly;
+}

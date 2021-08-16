@@ -2,8 +2,13 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  color: var(--highlight);
 }
 
+footer a {
+  color: var(--highlight);
+  text-decoration: none;
+}
 .footer-left {
   display: flex;
   flex-direction: row;
@@ -14,5 +19,9 @@ footer {
   display: flex;
   flex-direction: row;
   align-items: center;
+}
+
+div#jadu-mart {
+  font-family: Zeyada, 'cursive'
 }
 
