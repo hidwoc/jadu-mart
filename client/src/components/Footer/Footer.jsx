@@ -36,7 +36,7 @@ const Footer = ({ user, setUser }) => {
           >
             <img
               id="instagram"
-              src={`${process.env.PUBLIC_URL}/assets/images/InstaOrange.png`}
+              src={`${process.env.PUBLIC_URL}/assets/graphics/InstaOrange.png`}
               alt="instagram-logo"
               width="20"
             />
@@ -47,7 +47,7 @@ const Footer = ({ user, setUser }) => {
           >
             <img
               id="github"
-              src={`${process.env.PUBLIC_URL}/assets/images/GithubOrange.png`}
+              src={`${process.env.PUBLIC_URL}/assets/graphics/GithubOrange.png`}
               alt="github-logo"
               width="20"
             />
@@ -58,7 +58,7 @@ const Footer = ({ user, setUser }) => {
           >
             <img
               id="linkedin"
-              src={`${process.env.PUBLIC_URL}/assets/images/LinkdinOrange.png`}
+              src={`${process.env.PUBLIC_URL}/assets/graphics/LinkdinOrange.png`}
               alt="linkedin logo"
               width="20"
             />

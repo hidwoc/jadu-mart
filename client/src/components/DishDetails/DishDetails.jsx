@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { addToBasket } from "../../services/baskets";
+import "./DishDetails.css"
 
 const DishDetails = ({ user, basket, setBasket, dish }) => {
   const handleAdd = async () => {
@@ -17,7 +18,7 @@ const DishDetails = ({ user, basket, setBasket, dish }) => {
       return inStock;
     }
   };
-  // TODO 1 render image
+
   return (
     <div className="dish-details">
       <div className="details-left">
