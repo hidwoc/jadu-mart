@@ -12,7 +12,7 @@ const Welcome = () => {
       </div>
       <div id="button-div">
         <Link to="/shop">
-          <button id="shop-goods">SHOP THE GOODS</button>
+          <button>SHOP THE GOODS</button>
         </Link>
       </div>
     </div>

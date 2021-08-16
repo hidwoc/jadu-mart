@@ -37,7 +37,9 @@
   right: 0;
 }
 
-#shop-goods {
+.welcome button {
+  font-size: 35px;
   margin: 20px;
+  padding: 25px 50px;
 }
 
