@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import DishDetails from "../../components/DishDetails/DishDetails";
 import { getAllDishes } from "../../services/dishes";
-import "./Shop.css"
+import "./Shop.css";
 
 const Shop = ({ user, basket, setBasket }) => {
   const [dishes, setDishes] = useState([]);
@@ -22,7 +22,14 @@ const Shop = ({ user, basket, setBasket }) => {
         {user ? (
           <Link to="/add-dish">Add New</Link>
         ) : (
-          <Link to="/basket">Basket</Link>
+          <Link to="/basket">
+            <img
+              id="to-basket"
+              src="/assets/graphics/BasketClosed.png"
+              alt="basket"
+              width="45"
+            />
+          </Link>
         )}
       </header>
       <div className="dishes-div">

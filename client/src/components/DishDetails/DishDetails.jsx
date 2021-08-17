@@ -8,7 +8,7 @@ const DishDetails = ({ user, basket, setBasket, dish }) => {
     setBasket(res);
   };
 
-  const inStock = <button onClick={handleAdd}>Add to Cart</button>;
+  const inStock = <button onClick={handleAdd}>Add to Basket</button>;
   const outOfStock = <button id="out-of-stock">Out of Stock</button>;
 
   const handleInventory = () => {
