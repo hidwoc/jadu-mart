@@ -8,7 +8,8 @@ class BasketsController < ApplicationController
     render json: @basket.to_json( 
       :include => {
         :line_items => {
-          :include => :dish
+          :include => :dish,
+          :methods => :subtotal
         },
       },
       :methods => :total
