@@ -1,4 +1,40 @@
+.login {
+  text-align: center
+}
+
 #welcome-admin {
+  color: var(--highlight);
   font-family: 'Zeyada', cursive;
-  color: var(--highlight)
+  font-size: 55px;
+}
+
+.login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.input-div {
+  font-size: 25px;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-div label {
+  text-align: end;
+  width: 160px;
+}
+
+.input-div input {
+  font-size: 25px;
+  margin: 0px 50px 5px 15px;
+  width: 450px;
+}
+
+button#login {
+  font-size: 30px;
+  margin: 25px auto;
+  padding: 10px 20px;
 }
