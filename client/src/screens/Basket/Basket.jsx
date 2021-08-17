@@ -62,9 +62,8 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
               className="icon"
               src="/assets/graphics/BackArrow.png"
               alt="back arrow"
-              width="30"
             />
-            <div className="go-back">Back to Shop</div>
+            <p className="go-back">Back to Shop</p>
           </Link>
         </div>
       </header>

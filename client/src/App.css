@@ -29,6 +29,15 @@ header {
   align-content: center;
 }
 
+header .icon {
+  width: 40px;
+  height: 40px;
+}
+
+header .go-back {
+  margin: 5px 0;
+}
+
 header h3 {
   color: var(--highlight);
   font-family: 'Zeyada', cursive;

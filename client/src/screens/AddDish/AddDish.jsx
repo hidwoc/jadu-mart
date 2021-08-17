@@ -30,9 +30,8 @@ const AddDish = () => {
               className="icon"
               src="/assets/graphics/BackArrow.png"
               alt="back arrow"
-              width="30"
             />
-            <div className="go-back">Return Without Saving</div>
+            <p className="go-back">Return Without Saving</p>
           </Link>
         </div>
       </header>
