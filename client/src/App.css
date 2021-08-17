@@ -20,6 +20,13 @@ header {
   display: flex;
   justify-content: space-between;
   align-content: center;
+  width: 100%;
+}
+
+.header-right {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }
 
 header h3 {
@@ -32,7 +39,9 @@ header h3 {
 header a {
   color: black;
   font-size: 18px;
-  height: 18px;
-  margin: 0;
+  margin: 10px 0;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
 }

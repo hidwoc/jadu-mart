@@ -56,9 +56,17 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
     <div className="basket-screen">
       <header>
         <h3>Basket</h3>
-        <Link to="/shop">
-          <div className="go-back">Back to Shop</div>
-        </Link>
+        <div className="header-right">
+          <Link to="/shop">
+            <img
+              className="icon"
+              src="/assets/graphics/BackArrow.png"
+              alt="back arrow"
+              width="30"
+            />
+            <div className="go-back">Back to Shop</div>
+          </Link>
+        </div>
       </header>
       <div className="basket-column-header">
         <h4 id="column-dish">Dish</h4>
@@ -94,9 +102,19 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
               <p className="line-name">{lineItem.dish.name.toUpperCase()}</p>
               <p className="line-price">${lineItem.dish.price}</p>
               <div className="line-quantity">
-                <button className="add-reduce" onClick={() => handleReduce(lineItem.id)}>-</button>
+                <button
+                  className="add-reduce"
+                  onClick={() => handleReduce(lineItem.id)}
+                >
+                  -
+                </button>
                 <p className="quantity">{lineItem.quantity}</p>
-                <button className="add-reduce" onClick={() => handleAdd(lineItem.id)}>+</button>
+                <button
+                  className="add-reduce"
+                  onClick={() => handleAdd(lineItem.id)}
+                >
+                  +
+                </button>
               </div>
               <p className="line-subtotal">${lineItem.subtotal}</p>
             </div>
