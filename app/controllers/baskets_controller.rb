@@ -1,10 +1,8 @@
 class BasketsController < ApplicationController
   before_action :set_basket, only: [:show, :place_order, :destroy, :add_line_item_to_basket]
-  # after_action :destroy, only: :place_order
 
   # GET /baskets/:id
   def show
-    # render json: @basket, include: {:line_items => {include: :dish}}
     render json: @basket.to_json( 
       :include => {
         :line_items => {

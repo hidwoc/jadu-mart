@@ -8,8 +8,9 @@ import {
 } from "../../services/lineItems";
 import "./Basket.css";
 
-const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
-  const [viewBasket, setViewBasket] = useState(null);
+const Basket = ({ basket, setToggleNewBasket }) => {
+  // const [viewBasket, setViewBasket] = useState(null);
+  const [viewBasket, setViewBasket] = useState({})
   const history = useHistory();
 
   useEffect(() => {
@@ -34,9 +35,25 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
     // TODO ! not rendering newViewBasket in time
   };
 
-  const handleAdd = async (itemID) => {
-    const res = await addQuantity(itemID);
-    console.log(res);
+  const handleAdd = (index, curr) => {
+    console.log(index, curr)
+    const updatedQuantity = curr + 1
+    const updatedSubtotal = 100
+    // like handleChange - viewBasket.line_itemsfind line_item by id and update quantity;
+    // console.log(res);
+    console.log(viewBasket)
+    console.log({
+      ...viewBasket,
+      line_items: [
+        ...viewBasket.line_items,
+        viewBasket.line_items[index]:
+        {
+          ...viewBasket.line_items[index],
+          quantity: updatedQuantity,
+          subtotal: updatedSubtotal
+        }
+      ] 
+    })
     // setViewBasket(prevState => prevState.line_items.find(lineItem => lineItem.id === itemID) = res)
   };
 
@@ -78,7 +95,7 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
         handleEmptyBasket
       ) : (
         <div className="basket-items">
-          {viewBasket.line_items.map((lineItem) => (
+          {viewBasket.line_items?.map((lineItem, index) => (
             <div
               className="line-item"
               id={lineItem.dish.name}
@@ -107,9 +124,10 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
                   -
                 </button>
                 <p className="quantity">{lineItem.quantity}</p>
+                {/* <input type="text" value={lineItem.quantity}/> */}
                 <button
                   className="add-reduce"
-                  onClick={() => handleAdd(lineItem.id)}
+                  onClick={() => handleAdd(index, lineItem.quantity)}
                 >
                   +
                 </button>
@@ -119,7 +137,6 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
           ))}
           <div className="basket-summary">
             <h2>Grand Total:&nbsp;&nbsp;&nbsp; ${viewBasket?.total}</h2>
-            {console.log("Basket Total", viewBasket?.total)}
             <button id="order" onClick={() => handleOrder(viewBasket.id)}>
               Place Order
             </button>
