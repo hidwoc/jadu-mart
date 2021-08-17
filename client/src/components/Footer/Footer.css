@@ -37,6 +37,7 @@ footer a {
 
 .footer-left nav a{
   margin: 0 5px;
+  opacity: .5;
 }
 
 .footer-right {

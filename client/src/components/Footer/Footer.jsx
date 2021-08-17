@@ -16,14 +16,39 @@ const Footer = ({ user, setUser }) => {
       <div className="footer-left">
         <div id="jadu-mart">Jadu Mart</div>
         <nav>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/shop">Shop</NavLink>
+          <NavLink
+            to="/home"
+            activeStyle={{ opacity: "1", fontWeight: "bold" }}
+          >
+            Home
+          </NavLink>
+          <NavLink
+            to="/shop"
+            activeStyle={{ opacity: "1", fontWeight: "bold" }}
+          >
+            Shop
+          </NavLink>
+          <NavLink
+            to="/basket"
+            activeStyle={{ opacity: "1", fontWeight: "bold" }}
+          >
+            Basket
+          </NavLink>
           {user ? (
-            <NavLink to="/" onClick={handleLogout}>
+            <NavLink
+              to="/home"
+              onClick={handleLogout}
+              activeStyle={{ opacity: "1", fontWeight: "bold" }}
+            >
               Logout
             </NavLink>
           ) : (
-            <NavLink to="/login">Login</NavLink>
+            <NavLink
+              to="/login"
+              activeStyle={{ opacity: "1", fontWeight: "bold" }}
+            >
+              Login
+            </NavLink>
           )}
         </nav>
       </div>

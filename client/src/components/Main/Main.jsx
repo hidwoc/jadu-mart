@@ -10,7 +10,7 @@ import "./Main.css"
 const Main = ({user, basket, setBasket, setToggleNewBasket}) => {
   return (
     <div className="main">
-      <Route exact path="/">
+      <Route exact path="/home">
         <Welcome />
       </Route>
       <Route path="/shop">
