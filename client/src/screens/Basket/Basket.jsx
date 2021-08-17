@@ -66,51 +66,50 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
         <h4 id="column-quantity">Quantity</h4>
         <h4 id="column-subtotal">Subtotal</h4>
       </div>
-        {!viewBasket
-          ? handleNoBasket
-          : viewBasket.line_items?.length < 1
-          ? handleEmptyBasket
-          : (<div className="basket-items">
-            {viewBasket.line_items.map((lineItem) => (
-              <div
-                className="line-item"
-                id={lineItem.dish.name}
-                key={lineItem.id}
-              >
-                <div className="line-dish-left">
-                  <img
-                    src={lineItem.dish.img_url}
-                    alt={lineItem.dish.name}
-                    width="150"
-                  />
-                  <button
-                    className="remove-from-basket"
-                    onClick={() => handleRemove(lineItem.id)}
-                  >
-                    Remove from Basket
-                  </button>
-                </div>
-                <p className="line-dish-name">
-                  {lineItem.dish.name.toUpperCase()}
-                </p>
-                <p className="line-price">${lineItem.dish.price}</p>
-                <button onClick={() => handleReduce(lineItem.id)}>-</button>
-                <p className="line=quantity">{lineItem.quantity}</p>
-                <button onClick={() => handleAdd(lineItem.id)}>+</button>
-                {/* TODO: render calculated attribute */}
-                <p>${lineItem.subtotal}</p>
-                {console.log("LineItem Subtotal", lineItem.subtotal)}
+      {!viewBasket ? (
+        handleNoBasket
+      ) : viewBasket.line_items?.length < 1 ? (
+        handleEmptyBasket
+      ) : (
+        <div className="basket-items">
+          {viewBasket.line_items.map((lineItem) => (
+            <div
+              className="line-item"
+              id={lineItem.dish.name}
+              key={lineItem.id}
+            >
+              <div className="line-item-left">
+                <img
+                  src={lineItem.dish.img_url}
+                  alt={lineItem.dish.name}
+                  width="150"
+                />
+                <button
+                  className="remove-from-basket"
+                  onClick={() => handleRemove(lineItem.id)}
+                >
+                  Remove from Basket
+                </button>
               </div>
-            ))}
-        <div className="basket-summary">
-          {/* TODO: render calculated attribute */}
-          <h2>Grand Total: ${viewBasket?.total}</h2>
-          {console.log("Basket Total", viewBasket?.total)}
-          <button onClick={() => handleOrder(viewBasket.id)}>
-            Place Order
-          </button>
+              <p className="line-name">{lineItem.dish.name.toUpperCase()}</p>
+              <p className="line-price">${lineItem.dish.price}</p>
+              <div className="line-quantity">
+                <button onClick={() => handleReduce(lineItem.id)}>-</button>
+                <p className="quantity">{lineItem.quantity}</p>
+                <button onClick={() => handleAdd(lineItem.id)}>+</button>
+              </div>
+              <p>${lineItem.subtotal}</p>
+            </div>
+          ))}
+          <div className="basket-summary">
+            <h2>Grand Total: ${viewBasket?.total}</h2>
+            {console.log("Basket Total", viewBasket?.total)}
+            <button onClick={() => handleOrder(viewBasket.id)}>
+              Place Order
+            </button>
+          </div>
         </div>
-      </div>)}
+      )}
     </div>
   );
 };

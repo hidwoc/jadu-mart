@@ -13,8 +13,6 @@ class BasketsController < ApplicationController
       },
       :methods => :total
     )
-    
-  
   end
 
   # POST /baskets

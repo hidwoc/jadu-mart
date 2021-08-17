@@ -1,3 +1,7 @@
+.basket-screen {
+  padding-bottom: 150px;
+}
+
 .basket-column-header {
   color: var(--highlight);
   display: flex;
@@ -31,6 +35,23 @@
   display: flex;
   flex-direction: column;
   align-content: center;
+  width: 20%;
+}
+
+.line-name {
+  width: 20%
+}
+
+.line-price {
+  width: 10%
+}
+
+.line-quantity {
+  width: 25%;
+}
+
+.line-subtotal {
+  width: 25%
 }
 
 .remove-from-basket {
@@ -38,6 +59,7 @@
   background-color: white;
   color: var(--dark)
 }
+
 .basket-summary {
   display: flex;
   justify-content: space-evenly;
