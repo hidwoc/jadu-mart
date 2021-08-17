@@ -1,3 +1,9 @@
+:root {
+  --dish: 45%;
+  --price: 10%;
+  --quantity: 30%;
+  --subtotal: 15%;
+}
 .basket-screen {
   padding-bottom: 150px;
 }
@@ -11,24 +17,31 @@
 }
 
 #column-dish {
-  width: 40%;
+  width: var(--dish);
 }
 #column-price {
-  width: 10%; 
+  width: var(--price); 
 }
 #column-quantity {
-  width: 25%;
+  width: var(--quantity);
 }
 #column-subtotal {
-  width: 25%;
+  width: var(--subtotal);
 }
 
 .line-item {
   display: flex;
-  justify-content: space-evenly;
   align-content: center;
   font-size: 24px;
   width: 100%;
+  margin: 20px auto;
+}
+
+.line-item p {
+  margin: auto;
+}
+.line-item p:not(.line-name) {
+  text-align: center;
 }
 
 .line-item-left {
@@ -38,29 +51,56 @@
   width: 20%;
 }
 
+.line-item-left img {
+  margin: 0 auto;
+}
+button.remove {
+  color: var(--dark);
+  font-size: 12px;
+  margin: 4px auto;
+  padding: 2px;
+  width: 120px;
+}
+
 .line-name {
-  width: 20%
+  width: 25%
 }
 
 .line-price {
-  width: 10%
+  width: var(--price)
 }
 
 .line-quantity {
-  width: 25%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-content: center;
+  padding: 0 25px;
+  width: var(--quantity);
+}
+
+.add-reduce {
+  font-size: 20px;
+  height: 30px;
+  margin: auto;
 }
 
 .line-subtotal {
-  width: 25%
+  width: var(--subtotal)
 }
 
 .remove-from-basket {
   border: none;
   background-color: white;
-  color: var(--dark)
+  color: var(--dark);
 }
 
 .basket-summary {
   display: flex;
   justify-content: space-evenly;
+}
+
+button#order {
+  font-size: 25px;
+  padding: 5px 30px;
 }

@@ -192,7 +192,7 @@ src
 | Welcome CSS           |    H     |      1hr       |   .75hrs    |     TBD     |
 | Shop CSS              |    H     |      1hrs      |   .4hrs    |     TBD     |
 | DishDetails CSS       |    H     |      2hrs      |   .5hrs    |     TBD     |
-| Basket CSS            |    H     |      3hrs      |   1hr    |     TBD     |
+| Basket CSS            |    H     |      3hrs      |   2hr    |     TBD     |
 | Login CSS             |    H     |      1hrs      |   ---    |     TBD     |
 | AddDish CSS           |    H     |      2hrs      |   ---    |     TBD     |
 | EditDish CSS          |    H     |      1hrs      |   ---    |     TBD     |

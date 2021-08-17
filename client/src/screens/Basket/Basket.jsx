@@ -82,10 +82,10 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
                 <img
                   src={lineItem.dish.img_url}
                   alt={lineItem.dish.name}
-                  width="150"
+                  width="125"
                 />
                 <button
-                  className="remove-from-basket"
+                  className="remove"
                   onClick={() => handleRemove(lineItem.id)}
                 >
                   Remove from Basket
@@ -94,17 +94,17 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
               <p className="line-name">{lineItem.dish.name.toUpperCase()}</p>
               <p className="line-price">${lineItem.dish.price}</p>
               <div className="line-quantity">
-                <button onClick={() => handleReduce(lineItem.id)}>-</button>
+                <button className="add-reduce" onClick={() => handleReduce(lineItem.id)}>-</button>
                 <p className="quantity">{lineItem.quantity}</p>
-                <button onClick={() => handleAdd(lineItem.id)}>+</button>
+                <button className="add-reduce" onClick={() => handleAdd(lineItem.id)}>+</button>
               </div>
-              <p>${lineItem.subtotal}</p>
+              <p className="line-subtotal">${lineItem.subtotal}</p>
             </div>
           ))}
           <div className="basket-summary">
-            <h2>Grand Total: ${viewBasket?.total}</h2>
+            <h2>Grand Total:&nbsp;&nbsp;&nbsp; ${viewBasket?.total}</h2>
             {console.log("Basket Total", viewBasket?.total)}
-            <button onClick={() => handleOrder(viewBasket.id)}>
+            <button id="order" onClick={() => handleOrder(viewBasket.id)}>
               Place Order
             </button>
           </div>
