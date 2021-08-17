@@ -1,0 +1,10 @@
+.edit-header-right {
+  display: flex;
+  flex-direction: column;
+}
+
+button#delete {
+  font-size: 18px;
+  margin: 5px auto;
+  padding: 10px 25px;
+}

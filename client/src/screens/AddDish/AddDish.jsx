@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { createDish } from "../../services/dishes";
 import { handleChange } from "../../utils/helpers";
-import "./AddDish.css"
+import "./AddDish.css";
 
 const AddDish = () => {
   const [form, setForm] = useState({
@@ -12,25 +12,33 @@ const AddDish = () => {
     inventory: 0,
     img_url: "",
   });
-  const history = useHistory()
+  const history = useHistory();
 
-  const handleSubmit = async(e) => {
-    e.preventDefault()
-    const res = await createDish(form)
-    if (res) history.push('/shop') 
-  }
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const res = await createDish(form);
+    if (res) history.push("/shop");
+  };
 
   return (
     <div className="add-dish">
       <header>
         <h3>Add New Dish</h3>
-        <Link to="/shop">
-          <div className="go-back">Return Without Saving</div>
-        </Link>
+        <div className="header-right">
+          <Link to="/shop">
+            <img
+              className="icon"
+              src="/assets/graphics/BackArrow.png"
+              alt="back arrow"
+              width="30"
+            />
+            <div className="go-back">Return Without Saving</div>
+          </Link>
+        </div>
       </header>
       <form className="dish" id="add-dish" onSubmit={handleSubmit}>
         <div className="form-left details-left">
-          <img src={form.img_url} alt="preview"/>
+          <img src={form.img_url} alt="preview" />
           <input
             id="img-url"
             type="text"

@@ -3,6 +3,13 @@
   flex-direction: row;
   margin: 30px auto;
   max-width: 900px;
+  height: 400px;
+}
+
+.details-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .details-left img {
@@ -30,6 +37,7 @@
 
 .dish-description {
   font-size: 20px;
+  width: 490px;
 }
 
 .dish-price {

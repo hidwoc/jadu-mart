@@ -2,16 +2,8 @@ form.dish {
   display: flex;
   flex-direction: row;
   margin: 30px auto;
-  max-width: 900px
-}
-
-form.dish input {
-  margin: 10px;
-}
-
-.form-left {
-  display: flex;
-  flex-direction: column;
+  max-width: 900px;
+  height: 420px;
 }
 
 #img-url {
@@ -34,6 +26,7 @@ input#price {
 input#inventory {
   font-size: 30px;
   width: 100px;
+  margin-left: 10px;
 }
 
 form.dish button {

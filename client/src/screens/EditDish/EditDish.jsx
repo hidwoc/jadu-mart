@@ -2,45 +2,58 @@ import { useEffect, useState } from "react";
 import { Link, useHistory, useParams } from "react-router-dom";
 import { editDish, deleteDish, getOneDish } from "../../services/dishes";
 import { handleChange } from "../../utils/helpers";
+import "./EditDish.css";
 
 // TODO: default image
 
 const EditDish = () => {
   const [form, setForm] = useState({});
   const history = useHistory();
-  const { id } = useParams()
+  const { id } = useParams();
 
   useEffect(() => {
-    const fetchDish = async() => {
-      const res = await getOneDish(id)
-      setForm(res)
-    }
-    fetchDish()
-  },[])
+    const fetchDish = async () => {
+      const res = await getOneDish(id);
+      setForm(res);
+    };
+    fetchDish();
+  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await editDish(id, form)
+    const res = await editDish(id, form);
     if (res) history.push("/shop");
   };
-  
-  const handleDelete = async() => {
-    const res = await deleteDish(id)
-    if (res) history.push("/shop")
-  }
+
+  const handleDelete = async () => {
+    const res = await deleteDish(id);
+    if (res) history.push("/shop");
+  };
 
   return (
     <div className="edit-dish">
       <header>
         <h3>Edit Dish</h3>
-        <Link to="/shop">
-          <div className="go-back">Return Without Saving</div>
-          <button onClick={handleDelete}>Delete</button>
-        </Link>
+        <div className="edit-header-right">
+          <div className="header-right">
+            <Link to="/shop">
+              <img
+                className="icon"
+                src="/assets/graphics/BackArrow.png"
+                alt="back arrow"
+                width="30"
+              />
+              <div className="go-back">Return Without Saving</div>
+            </Link>
+          </div>
+          <button id="delete" onClick={handleDelete}>
+            Delete
+          </button>
+        </div>
       </header>
       <form className="dish" id="edit-dish" onSubmit={handleSubmit}>
-        <div className="form-left">
-          <img src={form.img_url} alt="preview" width="300"/>
+        <div className="form-left details-left">
+          <img src={form.img_url} alt="preview" width="300" />
           <input
             id="img-url"
             type="text"
@@ -51,9 +64,10 @@ const EditDish = () => {
             required
           />
         </div>
-        <div className="form-right">
+        <div className="form-right details-right">
           <input
             id="name"
+            className="dish-name"
             type="text"
             placeholder="NAME OF DISH"
             name="name"
@@ -64,6 +78,7 @@ const EditDish = () => {
           />
           <input
             id="description"
+            className="dish-description"
             type="text"
             placeholder="Dish description"
             name="description"
@@ -71,9 +86,10 @@ const EditDish = () => {
             onChange={(e) => handleChange(e, form, setForm)}
           />
           <div className="num-inputs">
-            $
+            <label htmlFor="price">$</label>
             <input
               id="price"
+              className="dish-price"
               type="number"
               placeholder="Price"
               name="price"
@@ -81,7 +97,7 @@ const EditDish = () => {
               onChange={(e) => handleChange(e, form, setForm)}
               required
             />
-            Inventory:{" "}
+            <label htmlFor="inventory">Inventory</label>
             <input
               id="inventory"
               type="number"
