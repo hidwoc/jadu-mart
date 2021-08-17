@@ -29,7 +29,7 @@ const DishDetails = ({ user, basket, setBasket, dish }) => {
         <p className="dish-description">{dish.description}</p>
         <p className="dish-price">${dish.price}</p>
         {user ? (
-          <Link to={`/edit-dish/${dish.id}`}>Edit</Link>
+          <Link to={`/edit-dish/${dish.id}`} id="edit">Edit</Link>
         ) : (
           handleInventory()
         )}

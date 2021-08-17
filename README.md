@@ -191,7 +191,7 @@ src
 | Footer CSS            |    H     |      1hrs      |      ---      |    .3hrs    |
 | Welcome CSS           |    H     |      1hr       |      ---      |   .75hrs    |
 | Shop CSS              |    H     |      1hrs      |      ---      |    .4hrs    |
-| DishDetails CSS       |    H     |      2hrs      |      ---      |    .5hrs    |
+| DishDetails CSS       |    H     |      2hrs      |      .25hrs      |    .5hrs    |
 | Basket CSS            |    H     |      3hrs      |      ---      |     2hr     |
 | Login CSS             |    H     |      1hrs      |      .6hrs      |     TBD     |
 | AddDish CSS           |    H     |      2hrs      |      ---      |     TBD     |
