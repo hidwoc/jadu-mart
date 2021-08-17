@@ -33,7 +33,7 @@ _**Jadu Mart** will not include any exchange of money._
   - Dishes will be READ and its stock will be UPDATED via submitting a Basket for order
   - Line Items will be CREATED and DESTROYED by adding/removing them from Baskets
   - Line Items are instances of a Dish that get added to Baskets to account for and decrement a Dish's stock
-  - For MVP, User will consist of an admin who will be able to CREATE and UPDATE Dishes
+  - For MVP, User will consist of an admin who will be able to CREATE, UPDATE and DELETE Dishes
 
 - Front End
 
@@ -155,7 +155,7 @@ src
 | Thurs Aug 12 | Set up backend, test routes |  Complete  |
 | Fri Aug 13   |    Build React Skeleton     |  Complete  |
 | Sat Aug 14   |    Render all components    |  Complete  |
-| Sun Aug 15   | Successful CRUD on Frontend | Incomplete |
+| Sun Aug 15   | Successful CRUD on Frontend |  Complete  |
 | Mon Aug 16   |    Deploy to Heroku, CSS    |  Complete  |
 | Tue Aug 17   |        Advanced CSS         | Incomplete |
 | Wed Aug 18   |        Presentation         | Incomplete |
@@ -185,17 +185,17 @@ src
 | AddDish               |    H     |      1hrs      |      ---      |     1hr     |
 | EditDish              |    H     |      1hrs      |      ---      |   .25hrs    |
 | Authentication        |    H     |      2hr       |      ---      |    .6hrs    |
-| Global CSS            |    H     |      2hrs      |      .25hrs      |   .75hrs    |
+| Global CSS            |    H     |      2hrs      |    .25hrs     |   .75hrs    |
 | Layout CSS            |    H     |      1hr       |      ---      |     TBD     |
 | Main CSS              |    H     |      1hr       |      ---      |     TBD     |
 | Footer CSS            |    H     |      1hrs      |      ---      |    .3hrs    |
 | Welcome CSS           |    H     |      1hr       |      ---      |   .75hrs    |
 | Shop CSS              |    H     |      1hrs      |      ---      |    .4hrs    |
-| DishDetails CSS       |    H     |      2hrs      |      .25hrs      |    .5hrs    |
-| Basket CSS            |    H     |      3hrs      |      ---      |     2hr     |
-| Login CSS             |    H     |      1hrs      |      .6hrs      |     TBD     |
-| AddDish CSS           |    H     |      2hrs      |      .5hrs      |     TBD     |
-| EditDish CSS          |    H     |      1hrs      |      .4hrs      |     TBD     |
+| DishDetails CSS       |    H     |      2hrs      |    .25hrs     |    .5hrs    |
+| Basket CSS            |    H     |      3hrs      |      .1hrs      |     2hr     |
+| Login CSS             |    H     |      1hrs      |     .6hrs     |     TBD     |
+| AddDish CSS           |    H     |      2hrs      |     .5hrs     |     TBD     |
+| EditDish CSS          |    H     |      1hrs      |     .4hrs     |     TBD     |
 | Deploy to Netlify     |    H     |     .5hrs      |      ---      |    .5hrs    |
 | TOTAL                 |          |    45.5hrs     |      ---      |  28.45hrs   |
 
@@ -215,7 +215,6 @@ src
 
 - Back End
 
-  - Admin will be able to DELETE dishes
   - Customers will be able to create and log into their own accounts
   - Add Orders table to save past orders via submitted baskets
   - Expand Dishes to offer different sizes available for purchase (ex. 4oz, 8oz, 16oz)
@@ -225,6 +224,7 @@ src
 
   - Once logged in, customers will be able to view their past orders, reorder and leave reviews for each dish
   - Details of a Dish, such as ingredients and flavor profile, can be viewed on a separate details page
+  - Mini Basket view available throughout app (not just on Basket screen)
 
 - Enable payments to be made hrough the app
 

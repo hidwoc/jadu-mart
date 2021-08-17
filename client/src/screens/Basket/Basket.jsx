@@ -8,7 +8,6 @@ import {
 } from "../../services/lineItems";
 import "./Basket.css";
 
-// TODO: if no basket, render "basket empty"
 const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
   const [viewBasket, setViewBasket] = useState(null);
   const history = useHistory();
@@ -21,9 +20,9 @@ const Basket = ({ basket, setBasket, setToggleNewBasket }) => {
     fetchBasket();
   }, [basket?.id]);
 
-  const handleNoBasket = <h4>Loading Basket...</h4>;
+  const handleNoBasket = <h4 className="basket-message">Loading Basket...</h4>;
 
-  const handleEmptyBasket = <h4>Basket is Empty!</h4>;
+  const handleEmptyBasket = <h4 className="basket-message">Basket is Empty!</h4>;
 
   const handleRemove = async (itemID) => {
     const res = await removeFromBasket(itemID);

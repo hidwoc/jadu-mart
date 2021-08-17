@@ -16,6 +16,12 @@
   text-align: center;
 }
 
+.basket-message {
+  font-family: 'Zeyada', cursive;
+  font-size: 35px;
+  text-align: center;
+}
+
 #column-dish {
   width: var(--dish);
 }
