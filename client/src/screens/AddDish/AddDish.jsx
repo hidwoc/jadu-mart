@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useHistory } from "react-router-dom";
 import { createDish } from "../../services/dishes";
 import { handleChange } from "../../utils/helpers";
+import "./AddDish.css"
 
 const AddDish = () => {
   const [form, setForm] = useState({
@@ -27,9 +28,9 @@ const AddDish = () => {
           <div className="go-back">Return Without Saving</div>
         </Link>
       </header>
-      <form className="dish-form" id="add-dish" onSubmit={handleSubmit}>
-        <div className="form-left">
-          <img src={form.img_url} alt="preview" width="300"/>
+      <form className="dish" id="add-dish" onSubmit={handleSubmit}>
+        <div className="form-left details-left">
+          <img src={form.img_url} alt="preview"/>
           <input
             id="img-url"
             type="text"
@@ -39,9 +40,10 @@ const AddDish = () => {
             required
           />
         </div>
-        <div className="form-right">
+        <div className="form-right details-right">
           <input
             id="name"
+            className="dish-name"
             type="text"
             placeholder="NAME OF DISH"
             name="name"
@@ -51,22 +53,24 @@ const AddDish = () => {
           />
           <input
             id="description"
+            className="dish-description"
             type="text"
             placeholder="Dish description"
             name="description"
             onChange={(e) => handleChange(e, form, setForm)}
           />
           <div className="num-inputs">
-            $
+            <label htmlFor="price">$</label>
             <input
               id="price"
+              className="dish-price"
               type="number"
               placeholder="Price"
               name="price"
               onChange={(e) => handleChange(e, form, setForm)}
               required
             />
-            Inventory:{" "}
+            <label htmlFor="inventory">Inventory</label>
             <input
               id="inventory"
               type="number"

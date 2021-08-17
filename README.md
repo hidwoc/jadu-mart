@@ -194,7 +194,7 @@ src
 | DishDetails CSS       |    H     |      2hrs      |      .25hrs      |    .5hrs    |
 | Basket CSS            |    H     |      3hrs      |      ---      |     2hr     |
 | Login CSS             |    H     |      1hrs      |      .6hrs      |     TBD     |
-| AddDish CSS           |    H     |      2hrs      |      ---      |     TBD     |
+| AddDish CSS           |    H     |      2hrs      |      .5hrs      |     TBD     |
 | EditDish CSS          |    H     |      1hrs      |      ---      |     TBD     |
 | Deploy to Netlify     |    H     |     .5hrs      |      ---      |    .5hrs    |
 | TOTAL                 |          |    45.5hrs     |      ---      |  28.45hrs   |

@@ -1,0 +1,44 @@
+form.dish {
+  display: flex;
+  flex-direction: row;
+  margin: 30px auto;
+  max-width: 900px
+}
+
+form.dish input {
+  margin: 10px;
+}
+
+.form-left {
+  display: flex;
+  flex-direction: column;
+}
+
+#img-url {
+  text-align: center;
+}
+
+.num-inputs {
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  width: 100%;
+}
+
+input#price {
+  width: 150px;
+  margin-right: 30px;
+}
+
+input#inventory {
+  font-size: 30px;
+  width: 100px;
+}
+
+form.dish button {
+  font-size: 30px;
+  margin: 5px;
+  padding: 10px;
+  max-width: 325px;
+}

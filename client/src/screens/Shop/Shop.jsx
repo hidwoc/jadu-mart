@@ -20,7 +20,7 @@ const Shop = ({ user, basket, setBasket }) => {
       <header>
         <h3>Shop</h3>
         {user ? (
-          <Link to="/add-dish">Add New</Link>
+          <Link to="/add-dish">➕ Add New</Link>
         ) : (
           <Link to="/basket">
             <img

@@ -8,6 +8,9 @@
 .details-left img {
   margin: 0 auto;
   box-shadow: 1px 2px 2px #cecece;
+  width: 350px;
+  min-height: 250px;
+  max-height: 400px;
 }
 
 .details-right {
