@@ -9,11 +9,12 @@ Rails
     delete '/baskets/:id' => 'baskets#destroy'
 
     # post '/line_items' => 'line_items#create'
-    put '/line_items/:id/add' => 'line_items#add_quantity',
-          :as => 'line_item_add'
-    put '/line_items/:id/reduce' => 'line_items#reduce_quantity',
-          :as => 'line_item_reduce'
+    # put '/line_items/:id/add' => 'line_items#add_quantity',
+    #       :as => 'line_item_add'
+    # put '/line_items/:id/reduce' => 'line_items#reduce_quantity',
+    #       :as => 'line_item_reduce'
     get '/line_items/:id' => 'line_items#show', :as => 'line_item'
+    put '/line_items/:id' => 'line_items#update'
     delete '/line_items/:id' => 'line_items#remove_from_basket'
     
     resources :dishes

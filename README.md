@@ -169,7 +169,7 @@ src
 | Set up Models         |    H     |      1hr       |      ---      |   .75hrs    |
 | Seed Data             |    H     |     .5hrs      |      ---      |    .9hrs    |
 | Set up Routes         |    H     |     .5hrs      |      ---      |    .5hrs    |
-| Set up Controllers    |    H     |      3hrs      |      ---      |   2.6hrs    |
+| Set up Controllers    |    H     |      3hrs      |      .5hrs      |   2.6hrs    |
 | Test Routes           |    H     |      2hrs      |      ---      |   1.5hrs    |
 | Deploy to Heroku      |    H     |     .5hrs      |      ---      |    .5hrs    |
 | Create React Skeleton |    H     |     .5hrs      |      ---      |    .6hrs    |
@@ -180,7 +180,7 @@ src
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |   .05hrs    |
 | DishDetails           |    H     |      1hrs      |      ---      |    .7hrs    |
-| Basket                |    H     |      3hrs      |      ---      |   2.5hrs    |
+| Basket                |    H     |      3hrs      |      1.25hrs      |   2.5hrs    |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      ---      |     1hr     |
 | EditDish              |    H     |      1hrs      |      ---      |   .25hrs    |

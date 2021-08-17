@@ -32,3 +32,13 @@ export const reduceQuantity = async (id) => {
 //     const res = await api
 //   }
 // }
+
+export const updateLineItem = async(id, quantity) => {
+  try {
+    console.log(quantity)
+    const res = await api.put(`/line_items/${id}`, {line_item: quantity})
+    return res.data
+  } catch {
+    return false
+  }
+}

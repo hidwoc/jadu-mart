@@ -38,8 +38,8 @@ export const editDish = async (id, formData) => {
 
 export const deleteDish = async (id) => {
   try {
-    const res = await api.delete(`/dishes/${id}`);
-    return res.data;
+    await api.delete(`/dishes/${id}`);
+    return true;
   } catch {
     return false;
   }
