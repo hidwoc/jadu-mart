@@ -1,10 +1,10 @@
 .login {
-  text-align: center
+  text-align: center;
 }
 
 #welcome-admin {
   color: var(--highlight);
-  font-family: 'Zeyada', cursive;
+  font-family: "Zeyada", cursive;
   font-size: 55px;
 }
 
@@ -37,4 +37,26 @@ button#login {
   font-size: 30px;
   margin: 25px auto;
   padding: 10px 20px;
+}
+
+@media screen and (max-width: 530px) {
+  #welcome-admin {
+    font-size: 45px;
+  }
+
+  .input-div {
+    font-size: 20px;
+  }
+
+  .input-div label {
+    width: 80px;
+  }
+
+  .input-div input {
+    width: 200px;
+  }
+
+  button#login {
+    font-size: 24px;
+  }
 }
