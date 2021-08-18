@@ -180,7 +180,7 @@ src
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |   .05hrs    |
 | DishDetails           |    H     |      1hrs      |      ---      |    .7hrs    |
-| Basket                |    H     |      3hrs      |    1.25hrs    |   2.5hrs    |
+| Basket                |    H     |      3hrs      |    1.5hrs    |   2.5hrs    |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      ---      |     1hr     |
 | EditDish              |    H     |      1hrs      |      ---      |   .25hrs    |

@@ -56,10 +56,10 @@ button#order {
   }
 
   #column-dish {
-    width: 30%
+    width: 30%;
   }
   #column-price {
-    width: 20%
+    width: 20%;
   }
   #column-quantity {
     padding-right: 5px;

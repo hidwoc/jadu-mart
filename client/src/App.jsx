@@ -4,6 +4,7 @@ import Layout from "./Layout/Layout";
 import Main from "./components/Main/Main";
 import Login from "./screens/Login/Login";
 import Logout from "./components/Logout";
+import OrderPlaced from "./components/OrderPlaced/OrderPlaced";
 import { verify } from "./services/users";
 import { createBasket } from "./services/baskets";
 import "./App.css";
@@ -38,12 +39,13 @@ function App() {
         <Route path="/logout">
           <Logout setUser={setUser} />
         </Route>
-        <Main
-          user={user}
-          basket={basket}
-          setBasket={setBasket}
-          setToggleNewBasket={setToggleNewBasket}
-        />
+        <Route path="/thank-you">
+          <OrderPlaced
+            basket={basket}
+            setToggleNewBasket={setToggleNewBasket}
+          />
+        </Route>
+        <Main user={user} basket={basket} setBasket={setBasket} />
       </Layout>
     </div>
   );

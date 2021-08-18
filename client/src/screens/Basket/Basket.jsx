@@ -1,15 +1,13 @@
-import React, { useEffect, useState } from "react";
-import { Link, useHistory } from "react-router-dom";
+import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 import LineItem from "../../components/LineItem/LineItem";
-import { getBasket, placeOrder } from "../../services/baskets";
-import { updateLineItem } from "../../services/lineItems";
+import { getBasket } from "../../services/baskets";
 import "./Basket.css";
 
-const Basket = ({ basket, setToggleNewBasket }) => {
+const Basket = ({ basket }) => {
   const [viewBasket, setViewBasket] = useState(null);
   const [grandTotal, setGrandTotal] = useState("");
   const [toggleFetch, setToggleFetch] = useState(false);
-  const history = useHistory();
 
   useEffect(() => {
     const fetchBasket = async () => {
@@ -25,13 +23,6 @@ const Basket = ({ basket, setToggleNewBasket }) => {
   const handleEmptyBasket = (
     <h4 className="basket-message">Basket is Empty!</h4>
   );
-
-  const handleOrder = async (basketID) => {
-    await updateLineItem();
-    await placeOrder(basketID);
-    setToggleNewBasket((curr) => !curr);
-    history.push("/shop");
-  };
 
   return (
     <div className="basket-screen">
@@ -71,9 +62,9 @@ const Basket = ({ basket, setToggleNewBasket }) => {
           ))}
           <div className="basket-summary">
             <h2>Grand Total:&nbsp;&nbsp;&nbsp; ${grandTotal}</h2>
-            <button id="order" onClick={() => handleOrder(viewBasket.id)}>
-              Place Order
-            </button>
+            <Link to="/thank-you">
+              <button id="order">Place Order</button>
+            </Link>
           </div>
         </div>
       )}

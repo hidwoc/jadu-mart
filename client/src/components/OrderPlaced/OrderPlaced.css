@@ -1,0 +1,13 @@
+.thank-you {
+  color: var(--highlight);
+  font-family: 'Zeyada', cursive;
+  font-size: 80px;
+  text-align: center;
+  padding-top: 10vh;
+}
+
+@media screen and (max-width: 771px) {
+  .thank-you {
+    font-size: 75px;
+  }
+}
