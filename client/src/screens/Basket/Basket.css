@@ -37,6 +37,7 @@
 
 .basket-summary {
   display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
 }
 
@@ -45,7 +46,7 @@ button#order {
   padding: 5px 30px;
 }
 
-@media screen {
+@media screen and (max-width: 771px) {
   .basket-screen {
     padding-bottom: 50px;
   }
@@ -69,6 +70,7 @@ button#order {
   }
 
   .basket-summary {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
