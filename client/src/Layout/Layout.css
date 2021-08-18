@@ -11,3 +11,9 @@
   flex-direction: column;
   width: 85vw;
 }
+
+@media screen and (max-width: 975px) {
+  .layout-children {
+    width: 100vw;
+  }
+}

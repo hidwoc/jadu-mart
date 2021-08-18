@@ -28,7 +28,7 @@ const Basket = ({ basket, setToggleNewBasket }) => {
 
   const handleOrder = async (basketID) => {
     await updateLineItem();
-    const res = await placeOrder(basketID);
+    await placeOrder(basketID);
     setToggleNewBasket((curr) => !curr);
     history.push("/shop");
   };

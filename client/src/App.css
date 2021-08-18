@@ -69,3 +69,10 @@ input {
   caret-color: var(--highlight);
   font-family: 'Didact Gothic', serif;
 }
+
+@media screen and (max-width: 975px) {
+  header {
+    width: 80vw;
+    margin: auto;
+  }
+}

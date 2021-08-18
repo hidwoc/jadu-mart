@@ -17,7 +17,7 @@ const EditDish = () => {
       setForm(res);
     };
     fetchDish();
-  }, []);
+  }, [id]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

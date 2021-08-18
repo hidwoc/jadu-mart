@@ -75,3 +75,42 @@
 #edit:active {
   transform: translateY(4px)
 }
+
+@media screen and (max-width: 975px) {
+  .details-right {
+    padding-left: 10px;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .dish-details {
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+  }
+
+  .details-right {
+    justify-content: center;
+    align-content: center;
+    padding-left: 0;
+  }
+  .dish-name {
+    font-size: 43px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .dish-description {
+    font-size: 15px;
+    width: 100%;
+    margin: 0;
+  }
+  .dish-price {
+    font-size: 24px;
+    text-align: center;
+    margin: 10px auto;
+  }
+  .dish-details button {
+    font-size: 24px;
+    margin: 00px auto;
+  }
+}

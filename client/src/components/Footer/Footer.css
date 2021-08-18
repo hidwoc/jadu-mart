@@ -53,7 +53,7 @@ footer a {
   margin: 0 5px;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 771px) {
   .footer-left {
     flex-direction: column;
   }

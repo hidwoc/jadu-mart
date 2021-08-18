@@ -18,7 +18,7 @@ const LineItem = ({
   }, [lineItemQuantity]);
 
   const handleRemove = async () => {
-    const res = await removeFromBasket(lineItem.id);
+    await removeFromBasket(lineItem.id);
     setToggleFetch((curr) => !curr);
   };
 
