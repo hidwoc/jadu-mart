@@ -1,15 +1,7 @@
-import { NavLink, Link, useHistory } from "react-router-dom";
-import { logout } from "../../services/users";
+import { NavLink, Link } from "react-router-dom";
 import "./Footer.css";
 
-const Footer = ({ user, setUser }) => {
-  const history = useHistory();
-
-  const handleLogout = () => {
-    logout();
-    setUser(null);
-    history.push("/");
-  };
+const Footer = ({ user}) => {
 
   return (
     <footer>
@@ -45,8 +37,7 @@ const Footer = ({ user, setUser }) => {
           )}
           {user ? (
             <NavLink
-              to="/home"
-              onClick={handleLogout}
+              to="/logout"
               activeStyle={{ opacity: "1", fontWeight: "bold" }}
             >
               Logout

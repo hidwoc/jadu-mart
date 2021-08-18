@@ -157,7 +157,7 @@ src
 | Sat Aug 14   |    Render all components    |  Complete  |
 | Sun Aug 15   | Successful CRUD on Frontend |  Complete  |
 | Mon Aug 16   |    Deploy to Heroku, CSS    |  Complete  |
-| Tue Aug 17   |        Advanced CSS         | Incomplete |
+| Tue Aug 17   |        Advanced CSS         |  Complete  |
 | Wed Aug 18   |        Presentation         | Incomplete |
 
 #### Time Estimates
@@ -169,35 +169,35 @@ src
 | Set up Models         |    H     |      1hr       |      ---      |   .75hrs    |
 | Seed Data             |    H     |     .5hrs      |      ---      |    .9hrs    |
 | Set up Routes         |    H     |     .5hrs      |      ---      |    .5hrs    |
-| Set up Controllers    |    H     |      3hrs      |      .5hrs      |   2.6hrs    |
+| Set up Controllers    |    H     |      3hrs      |     .5hrs     |   2.6hrs    |
 | Test Routes           |    H     |      2hrs      |      ---      |   1.5hrs    |
 | Deploy to Heroku      |    H     |     .5hrs      |      ---      |    .5hrs    |
 | Create React Skeleton |    H     |     .5hrs      |      ---      |    .6hrs    |
 | Frontend API Config   |    H     |      1hr       |      ---      |   .45hrs    |
-| Layout                |    H     |      1hr       |      ---      |     TBD     |
-| Main                  |    H     |      1hr       |      ---      |     TBD     |
-| Footer                |    H     |      1hr       |      ---      |   .55hrs    |
+| Layout                |    H     |      1hr       |     .1hrs     |     TBD     |
+| Main                  |    H     |      1hr       |     .1hrs     |     TBD     |
+| Footer                |    H     |      1hr       |     .05rs     |   .55hrs    |
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |   .05hrs    |
 | DishDetails           |    H     |      1hrs      |      ---      |    .7hrs    |
-| Basket                |    H     |      3hrs      |      1.25hrs      |   2.5hrs    |
+| Basket                |    H     |      3hrs      |    1.25hrs    |   2.5hrs    |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      ---      |     1hr     |
 | EditDish              |    H     |      1hrs      |      ---      |   .25hrs    |
 | Authentication        |    H     |      2hr       |      ---      |    .6hrs    |
 | Global CSS            |    H     |      2hrs      |    .75hrs     |   .75hrs    |
-| Layout CSS            |    H     |      1hr       |      .25hrs      |     TBD     |
-| Main CSS              |    H     |      1hr       |      .25hrs      |     TBD     |
-| Footer CSS            |    H     |      1hrs      |      1.25hrs      |    .3hrs    |
-| Welcome CSS           |    H     |      1hr       |      .25hrs      |   .75hrs    |
+| Layout CSS            |    H     |      1hr       |    .25hrs     |     TBD     |
+| Main CSS              |    H     |      1hr       |    .25hrs     |     TBD     |
+| Footer CSS            |    H     |      1hrs      |    1.25hrs    |    .3hrs    |
+| Welcome CSS           |    H     |      1hr       |    .25hrs     |   .75hrs    |
 | Shop CSS              |    H     |      1hrs      |      ---      |    .4hrs    |
 | DishDetails CSS       |    H     |      2hrs      |    .75hrs     |    .5hrs    |
-| Basket CSS            |    H     |      3hrs      |      .1.75hrs      |     2hr     |
+| Basket CSS            |    H     |      3hrs      |   .1.75hrs    |     2hr     |
 | Login CSS             |    H     |      1hrs      |     .8hrs     |     TBD     |
-| AddDish CSS           |    H     |      2hrs      |     1hrs     |     TBD     |
+| AddDish CSS           |    H     |      2hrs      |     1hrs      |     TBD     |
 | EditDish CSS          |    H     |      1hrs      |     .5hrs     |     TBD     |
 | Deploy to Netlify     |    H     |     .5hrs      |      ---      |    .5hrs    |
-| TOTAL                 |          |    45.5hrs     |      ---      |  28.45hrs   |
+| TOTAL                 |          |    45.5hrs     |     10hrs     |  28.45hrs   |
 
 <br>
 
