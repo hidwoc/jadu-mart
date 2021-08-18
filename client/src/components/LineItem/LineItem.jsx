@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { updateLineItem, removeFromBasket } from "../../services/lineItems";
+import "./LineItem.css";
 
 const LineItem = ({
   lineItem,
@@ -46,8 +47,10 @@ const LineItem = ({
           Remove from Basket
         </button>
       </div>
-      <p className="line-name">{lineItem.dish.name.toUpperCase()}</p>
-      <p className="line-price">${lineItem.dish.price}</p>
+      <div className="line-item-middle">
+        <p className="line-name">{lineItem.dish.name.toUpperCase()}</p>
+        <p className="line-price">${lineItem.dish.price}</p>
+      </div>
       <div className="line-quantity">
         <button className="add-reduce" onClick={handleReduce}>
           -

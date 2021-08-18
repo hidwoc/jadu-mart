@@ -70,13 +70,16 @@ input {
   font-family: 'Didact Gothic', serif;
 }
 
-@media screen and (max-width: 975px) {
+@media screen and (max-width: 975px){
   header {
     width: 80vw;
     margin: auto;
   }
+}
+
+@media screen and (max-width: 550px) {
   header h3 {
-    font-size: 35px;
+    font-size: 40px;
   }
   header a {
     font-size: 15px;
