@@ -12,6 +12,16 @@ button {
   cursor: grab;
   font-family: 'Didact Gothic', serif;
   color: var(--highlight);
+  transition: 0.25s;
+}
+
+button:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+button:active {
+  transform: translateY(4px)
 }
 
 header {

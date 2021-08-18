@@ -32,7 +32,6 @@ class BasketsController < ApplicationController
   end
 
   # DELETE /baskets/:id
-  # TODO: will we have to invoke this to clear a basket after each session? --> clean up function
   def destroy
     @basket.destroy
     render "Basket destroyed!", status: :no_content

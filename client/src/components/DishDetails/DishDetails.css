@@ -64,4 +64,14 @@
   text-align: center;
   text-decoration: none;
   max-width: 100px;
+  transition: 0.25s;
+}
+
+#edit:hover {
+  background-color: var(--dark);
+  color: var(--light);
+}
+
+#edit:active {
+  transform: translateY(4px)
 }

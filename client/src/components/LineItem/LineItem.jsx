@@ -1,24 +1,25 @@
 import { useEffect, useState } from "react";
 import { updateLineItem, removeFromBasket } from "../../services/lineItems";
 
-const LineItem = ({ lineItem, setViewBasket, setGrandTotal, setToggleFetch}) => {
+const LineItem = ({
+  lineItem,
+  setViewBasket,
+  setGrandTotal,
+  setToggleFetch,
+}) => {
   const [lineItemSubtotal, setLineItemSubtotal] = useState(lineItem?.subtotal);
   const [lineItemQuantity, setLineItemQuantity] = useState(lineItem?.quantity);
 
   useEffect(() => {
-    // return () => {
-      // let updatedQuantity = lineItemQuantity
-      const update = async () => {
-        // console.log(updatedQuantity)
-        await updateLineItem(lineItem.id, { quantity: lineItemQuantity});
-      };
-      update();
-    
+    const update = async () => {
+      await updateLineItem(lineItem.id, { quantity: lineItemQuantity });
+    };
+    update();
   }, [lineItemQuantity]);
 
   const handleRemove = async () => {
     const res = await removeFromBasket(lineItem.id);
-    setToggleFetch(curr => !curr)
+    setToggleFetch((curr) => !curr);
   };
 
   const handleAdd = () => {
@@ -33,7 +34,7 @@ const LineItem = ({ lineItem, setViewBasket, setGrandTotal, setToggleFetch}) => 
       setLineItemSubtotal((prevState) => prevState - lineItem.dish?.price);
       setGrandTotal((prevState) => prevState - lineItem.dish?.price);
     } else {
-      handleRemove()
+      handleRemove();
     }
   };
 
