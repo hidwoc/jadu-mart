@@ -17,7 +17,7 @@
 }
 
 .basket-message {
-  font-family: 'Zeyada', cursive;
+  font-family: "Zeyada", cursive;
   font-size: 35px;
   text-align: center;
 }
@@ -26,7 +26,7 @@
   width: var(--dish);
 }
 #column-price {
-  width: var(--price); 
+  width: var(--price);
 }
 #column-quantity {
   width: var(--quantity);
@@ -48,5 +48,29 @@ button#order {
 @media screen {
   .basket-screen {
     padding-bottom: 50px;
+  }
+
+  .basket-column-header {
+    font-size: 18px;
+  }
+
+  #column-dish {
+    width: 30%
+  }
+  #column-price {
+    width: 20%
+  }
+  #column-quantity {
+    padding-right: 5px;
+  }
+  #column-subtotal {
+    width: 20%;
+    margin-right: 5px;
+  }
+
+  .basket-summary {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
