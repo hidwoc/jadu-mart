@@ -62,7 +62,7 @@ header a {
   flex-direction: row;
   align-content: center;
 }
- 
+
 input {
   border: none;
   border-bottom: solid 1px #cecece;
@@ -74,5 +74,12 @@ input {
   header {
     width: 80vw;
     margin: auto;
+  }
+  header h3 {
+    font-size: 35px;
+  }
+  header a {
+    font-size: 15px;
+    width: 80px;
   }
 }
