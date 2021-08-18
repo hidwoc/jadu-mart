@@ -88,7 +88,6 @@
     height: auto;
     width: 350px;
   }
-
   .details-right {
     justify-content: center;
     align-content: center;
@@ -111,6 +110,9 @@
   }
   .dish-details button {
     font-size: 24px;
-    margin: 00px auto;
+    margin: 0px auto;
+  }
+  #edit {
+    margin: 0 auto;
   }
 }

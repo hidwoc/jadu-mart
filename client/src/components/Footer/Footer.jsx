@@ -28,12 +28,21 @@ const Footer = ({ user, setUser }) => {
           >
             Shop
           </NavLink>
-          <NavLink
-            to="/basket"
-            activeStyle={{ opacity: "1", fontWeight: "bold" }}
-          >
-            Basket
-          </NavLink>
+          {user ? (
+            <NavLink
+              to="/add-dish"
+              activeStyle={{ opacity: "1", fontWeight: "bold" }}
+            >
+              Add
+            </NavLink>
+          ) : (
+            <NavLink
+              to="/basket"
+              activeStyle={{ opacity: "1", fontWeight: "bold" }}
+            >
+              Basket
+            </NavLink>
+          )}
           {user ? (
             <NavLink
               to="/home"

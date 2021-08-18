@@ -67,25 +67,29 @@ const AddDish = () => {
             onChange={(e) => handleChange(e, form, setForm)}
           />
           <div className="num-inputs">
-            <label htmlFor="price">$</label>
-            <input
-              id="price"
-              className="dish-price"
-              type="number"
-              placeholder="Price"
-              name="price"
-              onChange={(e) => handleChange(e, form, setForm)}
-              required
-            />
-            <label htmlFor="inventory">Inventory</label>
-            <input
-              id="inventory"
-              type="number"
-              placeholder="0"
-              name="inventory"
-              onChange={(e) => handleChange(e, form, setForm)}
-              required
-            />
+            <div className="price-div">
+              <label htmlFor="price">$</label>
+              <input
+                id="price"
+                className="dish-price"
+                type="number"
+                placeholder="Price"
+                name="price"
+                onChange={(e) => handleChange(e, form, setForm)}
+                required
+              />
+            </div>
+            <div className="inventory-div">
+              <label htmlFor="inventory">Inventory</label>
+              <input
+                id="inventory"
+                type="number"
+                placeholder="0"
+                name="inventory"
+                onChange={(e) => handleChange(e, form, setForm)}
+                required
+              />
+            </div>
           </div>
           <button>Save</button>
         </div>

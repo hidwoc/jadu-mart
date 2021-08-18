@@ -1,3 +1,7 @@
+.add-dish {
+  padding-bottom: 100px;
+}
+
 form.dish {
   display: flex;
   flex-direction: row;
@@ -34,4 +38,27 @@ form.dish button {
   margin: 5px;
   padding: 10px;
   max-width: 325px;
+}
+
+@media screen and (max-width: 860px) {
+  form.dish {
+    flex-direction: column;
+    height: auto;
+    width: 350px;
+  }
+
+  input#name {
+    width: 100%;
+  }
+  
+  .num-inputs {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  form.dish button {
+    font-size: 24px;
+    margin: 10px auto;
+    padding: 10px 30px;
+  }
 }
