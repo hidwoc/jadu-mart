@@ -185,13 +185,13 @@ src
 | AddDish               |    H     |      1hrs      |      ---      |     1hr     |
 | EditDish              |    H     |      1hrs      |      ---      |   .25hrs    |
 | Authentication        |    H     |      2hr       |      ---      |    .6hrs    |
-| Global CSS            |    H     |      2hrs      |    .25hrs     |   .75hrs    |
-| Layout CSS            |    H     |      1hr       |      ---      |     TBD     |
-| Main CSS              |    H     |      1hr       |      ---      |     TBD     |
-| Footer CSS            |    H     |      1hrs      |      .25hrs      |    .3hrs    |
-| Welcome CSS           |    H     |      1hr       |      ---      |   .75hrs    |
+| Global CSS            |    H     |      2hrs      |    .75hrs     |   .75hrs    |
+| Layout CSS            |    H     |      1hr       |      .25hrs      |     TBD     |
+| Main CSS              |    H     |      1hr       |      .25hrs      |     TBD     |
+| Footer CSS            |    H     |      1hrs      |      1.25hrs      |    .3hrs    |
+| Welcome CSS           |    H     |      1hr       |      .25hrs      |   .75hrs    |
 | Shop CSS              |    H     |      1hrs      |      ---      |    .4hrs    |
-| DishDetails CSS       |    H     |      2hrs      |    .25hrs     |    .5hrs    |
+| DishDetails CSS       |    H     |      2hrs      |    .75hrs     |    .5hrs    |
 | Basket CSS            |    H     |      3hrs      |      .1hrs      |     2hr     |
 | Login CSS             |    H     |      1hrs      |     .6hrs     |     TBD     |
 | AddDish CSS           |    H     |      2hrs      |     .5hrs     |     TBD     |
