@@ -4,7 +4,6 @@ import "./LineItem.css";
 
 const LineItem = ({
   lineItem,
-  setViewBasket,
   setGrandTotal,
   setToggleFetch,
 }) => {

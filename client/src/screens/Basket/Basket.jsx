@@ -55,7 +55,6 @@ const Basket = ({ basket }) => {
             <LineItem
               key={lineItem.id}
               lineItem={lineItem}
-              setViewBasket={setViewBasket}
               setGrandTotal={setGrandTotal}
               setToggleFetch={setToggleFetch}
             />
