@@ -46,8 +46,6 @@ class BasketsController < ApplicationController
       @basket.line_items << line_item
     else
       line_item = @basket.line_items.find_by(:dish_id => dish)
-      # TODO: will need to render UI for this!
-      # TODO: probably have to refactor this
       line_item.quantity += 1 unless dish.inventory < line_item.quantity
     end
  
