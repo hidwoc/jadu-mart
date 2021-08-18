@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Route } from "react-router-dom";
+import { Route, useHistory } from "react-router-dom";
 import Layout from "./Layout/Layout";
 import Main from "./components/Main/Main";
 import Login from "./screens/Login/Login";
@@ -13,6 +13,7 @@ function App() {
   const [user, setUser] = useState(null);
   const [basket, setBasket] = useState(null);
   const [toggleNewBasket, setToggleNewBasket] = useState(false);
+  const history = useHistory()
 
   useEffect(() => {
     const verifyUser = async () => {
@@ -29,6 +30,10 @@ function App() {
     };
     makeNewBasket();
   }, [toggleNewBasket]);
+
+  useEffect(() => {
+    history.push('/home')
+  },[])
 
   return (
     <div className="App">
