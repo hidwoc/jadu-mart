@@ -1,5 +1,8 @@
 # Jadu Mart
 
+Netlify: https://jadumart.netlify.app/
+Heroku: https://jadumart-api.herokuapp.com/dishes
+
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Libraries and Dependencies](#libraries-and-dependencies)
@@ -149,16 +152,16 @@ src
 
 #### Project Schedule
 
-| Day          |         Components          |   Status   |
-| ------------ | :-------------------------: | :--------: |
-| Wed Aug 11   |  Project Pitches Approval   |  Complete  |
-| Thurs Aug 12 | Set up backend, test routes |  Complete  |
-| Fri Aug 13   |    Build React Skeleton     |  Complete  |
-| Sat Aug 14   |    Render all components    |  Complete  |
-| Sun Aug 15   | Successful CRUD on Frontend |  Complete  |
-| Mon Aug 16   |    Deploy to Heroku, CSS    |  Complete  |
-| Tue Aug 17   |        Advanced CSS         |  Complete  |
-| Wed Aug 18   |        Presentation         | Incomplete |
+| Day          |         Components          |  Status  |
+| ------------ | :-------------------------: | :------: |
+| Wed Aug 11   |  Project Pitches Approval   | Complete |
+| Thurs Aug 12 | Set up backend, test routes | Complete |
+| Fri Aug 13   |    Build React Skeleton     | Complete |
+| Sat Aug 14   |    Render all components    | Complete |
+| Sun Aug 15   | Successful CRUD on Frontend | Complete |
+| Mon Aug 16   |    Deploy to Heroku, CSS    | Complete |
+| Tue Aug 17   |        Advanced CSS         | Complete |
+| Wed Aug 18   |        Presentation         | Complete |
 
 #### Time Estimates
 
@@ -169,35 +172,35 @@ src
 | Set up Models         |    H     |      1hr       |      ---      |   .75hrs    |
 | Seed Data             |    H     |     .5hrs      |      ---      |    .9hrs    |
 | Set up Routes         |    H     |     .5hrs      |      ---      |    .5hrs    |
-| Set up Controllers    |    H     |      3hrs      |     .5hrs     |   2.6hrs    |
+| Set up Controllers    |    H     |      3hrs      |      ---      |   3.1hrs    |
 | Test Routes           |    H     |      2hrs      |      ---      |   1.5hrs    |
 | Deploy to Heroku      |    H     |     .5hrs      |      ---      |    .5hrs    |
 | Create React Skeleton |    H     |     .5hrs      |      ---      |    .6hrs    |
 | Frontend API Config   |    H     |      1hr       |      ---      |   .45hrs    |
-| Layout                |    H     |      1hr       |     .1hrs     |     TBD     |
-| Main                  |    H     |      1hr       |     .1hrs     |     TBD     |
-| Footer                |    H     |      1hr       |     .05rs     |   .55hrs    |
+| Layout                |    H     |      1hr       |      ---      |    .1hrs    |
+| Main                  |    H     |      1hr       |      ---      |    .1hrs    |
+| Footer                |    H     |      1hr       |      ---      |    .6hrs    |
 | Welcome               |    H     |      1hr       |      ---      |     TBD     |
 | Shop                  |    H     |      1hr       |      ---      |   .05hrs    |
 | DishDetails           |    H     |      1hrs      |      ---      |    .7hrs    |
-| Basket                |    H     |      3hrs      |    1.5hrs     |   2.5hrs    |
+| Basket                |    H     |      3hrs      |      ---      |    4hrs     |
 | Login                 |    H     |      2hrs      |      ---      |    .5hrs    |
 | AddDish               |    H     |      1hrs      |      ---      |     1hr     |
 | EditDish              |    H     |      1hrs      |      ---      |   .25hrs    |
 | Authentication        |    H     |      2hr       |      ---      |    .6hrs    |
-| Global CSS            |    H     |      2hrs      |    .85hrs     |   .75hrs    |
-| Layout CSS            |    H     |      1hr       |    .25hrs     |     TBD     |
-| Main CSS              |    H     |      1hr       |    .25hrs     |     TBD     |
-| Footer CSS            |    H     |      1hrs      |    1.25hrs    |    .3hrs    |
-| Welcome CSS           |    H     |      1hr       |    .25hrs     |   .75hrs    |
+| Global CSS            |    H     |      2hrs      |      ---      |   1.6hrs    |
+| Layout CSS            |    H     |      1hr       |      ---      |   .25hrs    |
+| Main CSS              |    H     |      1hr       |      ---      |   .25hrs    |
+| Footer CSS            |    H     |      1hrs      |      ---      |   1.55hrs   |
+| Welcome CSS           |    H     |      1hr       |      ---      |     1hr     |
 | Shop CSS              |    H     |      1hrs      |      ---      |    .4hrs    |
-| DishDetails CSS       |    H     |      2hrs      |    .75hrs     |    .5hrs    |
-| Basket CSS            |    H     |      3hrs      |    1.75hrs    |     2hr     |
-| Login CSS             |    H     |      1hrs      |     .8hrs     |     TBD     |
-| AddDish CSS           |    H     |      2hrs      |     1hrs      |     TBD     |
-| EditDish CSS          |    H     |      1hrs      |     .5hrs     |     TBD     |
+| DishDetails CSS       |    H     |      2hrs      |      ---      |   1.25hrs   |
+| Basket CSS            |    H     |      3hrs      |      ---      |   3.75hrs   |
+| Login CSS             |    H     |      1hrs      |      ---      |    .8hrs    |
+| AddDish CSS           |    H     |      2hrs      |      ---      |    1hrs     |
+| EditDish CSS          |    H     |      1hrs      |      ---      |    .5hrs    |
 | Deploy to Netlify     |    H     |     .5hrs      |      ---      |    .5hrs    |
-| TOTAL                 |          |    45.5hrs     |     10hrs     |  28.45hrs   |
+| TOTAL                 |          |    45.5hrs     |      ---      |  38.45hrs   |
 
 <br>
 
@@ -227,11 +230,3 @@ src
   - Mini Basket view available throughout app (not just on Basket screen)
 
 - Enable payments to be made hrough the app
-
-## Code Showcase
-
-> Use this section to include a brief code snippet of functionality that you are proud of and a brief description.
-
-## Code Issues & Resolutions
-
-> Use this section to list of all major issues encountered and their resolution.
