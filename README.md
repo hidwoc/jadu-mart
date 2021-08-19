@@ -1,9 +1,5 @@
 # Jadu Mart
 
-Netlify: https://jadumart.netlify.app/
-
-Heroku: https://jadumart-api.herokuapp.com/dishes
-
 - [Overview](#overview)
 - [MVP](#mvp)
   - [Libraries and Dependencies](#libraries-and-dependencies)
@@ -26,6 +22,10 @@ Heroku: https://jadumart-api.herokuapp.com/dishes
 _**Jadu Mart** is an e-commerce website for my business Jadu Banchan. Admin users will be able to log into their account, create, edit and delete dishes. Customers will be able to browse all dishes, add dishes to their basket and place an order._
 
 _**Jadu Mart** will not include any exchange of money._
+
+Netlify: https://jadumart.netlify.app/
+
+Heroku: https://jadumart-api.herokuapp.com/dishes
 
 <br>
 
