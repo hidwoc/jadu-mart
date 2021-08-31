@@ -21,20 +21,20 @@ class BasketsController < ApplicationController
   end
 
   # DELETE /baskets/:id
-  def place_order
-    @basket.line_items.map do |line_item|
-      dish = Dish.find(line_item.dish_id)
-      dish.inventory -= line_item.quantity
-      dish.save
-    end
-    @basket.destroy
-    render Dish.all, status: :ok
-  end
+  # def place_order
+  #   @basket.line_items.map do |line_item|
+  #     dish = Dish.find(line_item.dish_id)
+  #     dish.inventory -= line_item.quantity
+  #     dish.save
+  #   end
+  #   @basket.destroy
+  #   render Dish.all, status: :ok
+  # end
 
   # DELETE /baskets/:id
   def destroy
     @basket.destroy
-    render "Basket destroyed!", status: :no_content
+    render "Basket destroyed!", status: :ok
   end
 
   # PUT /baskets/:id/add
