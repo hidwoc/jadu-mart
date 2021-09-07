@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   def show
-    render json: @order
+    render json: @order.to_json(:methods => :total)
   end
 
   # POST /orders
@@ -23,7 +23,7 @@ class OrdersController < ApplicationController
       render json: @order.errors, status: :unprocessable_entity
     end
   end
-
+  # TODO: POST request
   # POST /orders
   def place_order
     @order = Order.new(order_params)
