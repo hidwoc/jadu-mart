@@ -1,14 +1,21 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { addToBasket } from "../../services/baskets";
 import "./DishDetails.css";
 
 const DishDetails = ({ user, basket, setBasket, dish }) => {
+  const [buttonMessage, setButtonMessage] = useState("Add to Basket");
+
   const handleAdd = async () => {
+    setButtonMessage("Placed in Basket!")
     const res = await addToBasket(basket.id, dish.id);
     setBasket(res);
+    setTimeout(() => {
+      setButtonMessage("Add to Basket")
+    }, 800)
   };
 
-  const inStock = <button onClick={handleAdd}>Add to Basket</button>;
+  const inStock = <button onClick={handleAdd}>{buttonMessage}</button>;
   const outOfStock = <button id="out-of-stock">Out of Stock</button>;
 
   const handleInventory = () => {
