@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_08_31_000948) do
+ActiveRecord::Schema.define(version: 2021_09_11_235640) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -24,8 +24,7 @@ ActiveRecord::Schema.define(version: 2021_08_31_000948) do
     t.string "name"
     t.string "description"
     t.string "img_url"
-    t.integer "price"
-    t.integer "inventory"
+    t.integer "inventory", default: 0
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -33,19 +32,38 @@ ActiveRecord::Schema.define(version: 2021_08_31_000948) do
   create_table "line_items", force: :cascade do |t|
     t.bigint "dish_id", null: false
     t.bigint "basket_id", null: false
+    t.bigint "order_id", null: false
+    t.bigint "price_id", null: false
     t.integer "quantity", default: 1
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["basket_id"], name: "index_line_items_on_basket_id"
     t.index ["dish_id"], name: "index_line_items_on_dish_id"
+    t.index ["order_id"], name: "index_line_items_on_order_id"
+    t.index ["price_id"], name: "index_line_items_on_price_id"
   end
 
   create_table "orders", force: :cascade do |t|
-    t.string "name"
+    t.string "name", null: false
     t.string "address"
     t.string "phone"
+    t.string "message"
+    t.string "email"
+    t.string "allergies"
+    t.boolean "delivery"
+    t.string "payment_method"
+    t.string "payment_info"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "prices", force: :cascade do |t|
+    t.bigint "dish_id", null: false
+    t.integer "quantity"
+    t.integer "price"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["dish_id"], name: "index_prices_on_dish_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -59,4 +77,7 @@ ActiveRecord::Schema.define(version: 2021_08_31_000948) do
 
   add_foreign_key "line_items", "baskets"
   add_foreign_key "line_items", "dishes"
+  add_foreign_key "line_items", "orders"
+  add_foreign_key "line_items", "prices"
+  add_foreign_key "prices", "dishes"
 end

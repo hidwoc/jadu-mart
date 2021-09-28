@@ -230,4 +230,4 @@ src
   - Details of a Dish, such as ingredients and flavor profile, can be viewed on a separate details page
   - Mini Basket view available throughout app (not just on Basket screen)
 
-- Enable payments to be made hrough the app
+- Enable payments to be made through the app

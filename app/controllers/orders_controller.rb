@@ -1,5 +1,5 @@
 class OrdersController < ApplicationController
-  before_action :set_order, only: [:show, :update, :destroy]
+  before_action :set_order, only: %i[show update destroy]
 
   # GET /orders
   def index
@@ -10,7 +10,7 @@ class OrdersController < ApplicationController
 
   # GET /orders/1
   def show
-    render json: @order.to_json(:methods => :total)
+    render json: @order.to_json(methods: :total)
   end
 
   # POST /orders
@@ -23,6 +23,7 @@ class OrdersController < ApplicationController
       render json: @order.errors, status: :unprocessable_entity
     end
   end
+
   # TODO: POST request
   # POST /orders
   def place_order
@@ -55,13 +56,14 @@ class OrdersController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_order
-      @order = Order.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def order_params
-      params.require(:order).permit(:name, :address, :phone)
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_order
+    @order = Order.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def order_params
+    params.require(:order).permit(:name, :address, :phone)
+  end
 end

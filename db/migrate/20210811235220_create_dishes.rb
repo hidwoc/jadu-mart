@@ -4,8 +4,7 @@ class CreateDishes < ActiveRecord::Migration[6.1]
       t.string :name
       t.string :description
       t.string :img_url
-      t.integer :price
-      t.integer :inventory
+      t.integer :inventory, :default => 0
 
       t.timestamps
     end
