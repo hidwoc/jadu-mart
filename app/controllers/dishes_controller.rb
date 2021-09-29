@@ -6,11 +6,12 @@ class DishesController < ApplicationController
   def index
     @dishes = Dish.all.order(:created_at)
 
-    render json: @dishes.map do |dish|
-      dish.to_json(
-        :include => :prices
-      )
-    end
+    render json: @dishes.to_json(:include => :prices)
+    # map do |dish|
+    #   dish.to_json(
+    #     :include => :prices
+    #   )
+    # end
   end
 
   # GET /dishes/:id

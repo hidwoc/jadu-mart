@@ -5,8 +5,7 @@ class OrdersController < ApplicationController
   def index
     @orders = Order.all
 
-    render json: @orders.map do |order|
-      order.to_json(
+    render json: @orders.to_json(
         :include => {
           :line_items {
             :include => :dish,
