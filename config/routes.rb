@@ -16,7 +16,9 @@ Rails
     put '/line_items/:id' => 'line_items#update'
     delete '/line_items/:id' => 'line_items#remove_from_basket'
 
-    resources :dishes
+    resources :dishes do
+      resources :prices
+    end
     resources :orders
 
     # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html

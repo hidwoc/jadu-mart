@@ -5,12 +5,30 @@ class OrdersController < ApplicationController
   def index
     @orders = Order.all
 
-    render json: @orders
+    render json: @orders.map do |order|
+      order.to_json(
+        :include => {
+          :line_items {
+            :include => :dish,
+            :methods => :subtotal,
+          },
+        },
+        :methods =>  :total,
+      )
+    end
   end
 
   # GET /orders/1
   def show
-    render json: @order.to_json(methods: :total)
+    render json: @order.to_json(
+      :include => {
+        :line_items {
+          :include => :dish,
+          :methods => :subtotal,
+        },
+      },
+      :methods =>  :total,
+    )
   end
 
   # POST /orders
@@ -64,6 +82,18 @@ class OrdersController < ApplicationController
 
   # Only allow a list of trusted parameters through.
   def order_params
-    params.require(:order).permit(:name, :address, :phone)
+    params
+      .require(:order)
+      .permit(
+        :name,
+        :address,
+        :phone,
+        :message,
+        :email,
+        :allergies,
+        :delivery,
+        :payment_method,
+        :payment_info,
+      )
   end
 end

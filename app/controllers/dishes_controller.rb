@@ -6,12 +6,16 @@ class DishesController < ApplicationController
   def index
     @dishes = Dish.all.order(:created_at)
 
-    render json: @dishes
+    render json: @dishes.map do |dish|
+      dish.to_json(
+        :include => :prices
+      )
+    end
   end
 
   # GET /dishes/:id
   def show
-    render json: @dish
+    render json: @dish.to_json(:include => :prices)
   end
 
   # POST /dishes
@@ -48,6 +52,6 @@ class DishesController < ApplicationController
   def dish_params
     params
       .require(:dish)
-      .permit(:name, :description, :img_url, :price, :inventory)
+      .permit(:name, :description, :img_url, :inventory)
   end
 end
